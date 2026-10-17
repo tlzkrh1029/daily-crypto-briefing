@@ -26,6 +26,7 @@ const out = {
 };
 const fail = (section, what, err) => { out.meta.failures.push({ section, what, error: String(err?.message || err).slice(0, 200) }); };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+await mkdir(OUT, { recursive: true });
 
 // ---------------- sources ----------------
 const tv = LOCAL ? localTV(LOCAL) : createTV();
@@ -139,16 +140,16 @@ await section('ma', async () => {
 // ---------------- 4. top 10 ex-BTC (CoinGecko market-cap order, stables/wrapped out) ----------------
 const STABLE = new Set('USDT USDC USDE DAI USDS FDUSD PYUSD USD1 TUSD USDP RLUSD USDD FRAX USDG USDTB BUIDL USYC SUSDE SUSDS USD0 GHO CRVUSD EURC EURS XAUT PAXG BFUSD USDF USDX'.split(' '));
 const WRAPPED = /wrapped|staked|bridged|liquid staking|restaked| lst\b|wbtc|weth|steth|cbbtc|lbtc|jitosol|bnsol|msol|rseth|ezeth|weeth/i;
-let cgTop = null;
+const cgTop = {};
 async function coingeckoTop(pages = 4) {
-  if (cgTop) return cgTop;
+  if (cgTop[pages]) return cgTop[pages];
   const all = [];
   for (let p = 1; p <= pages; p++) {
     const j = await http(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=${p}&price_change_percentage=24h,7d`, { tries: 4 });
     all.push(...j);
     await sleep(2500);
   }
-  cgTop = all;
+  cgTop[pages] = all;
   return all;
 }
 let tvMap = null;
@@ -175,19 +176,20 @@ await section('top10', async () => {
     coins = j.coins.slice(0, 40).map((c) => ({ id: c.cg, symbol: c.sym, name: c.name, market_cap_rank: c.rank }));
   } else coins = await coingeckoTop(1);
   const map = await tickerMap();
-  const pick = coins.filter((c) => String(c.symbol).toUpperCase() !== 'BTC' && !isStable(c)).slice(0, 10);
-  const rows = [];
+  const pick = coins.filter((c) => String(c.symbol).toUpperCase() !== 'BTC' && !isStable(c)).slice(0, 25);
+  const rows = [], skipped = [];
   for (const c of pick) {
+    if (rows.length >= 10) break;
     const sym = map.byCg[c.id] || `CRYPTO:${String(c.symbol).toUpperCase()}USD`;
     try {
       const s = await getSeries(sym, { count: 900 });
       const r = report(s, { lines: ['sma50', 'hma144', 'sma365'], multiples: [], nowMs: NOW });
       rows.push({ sym: String(c.symbol).toUpperCase(), rank: c.market_cap_rank, tv: sym, close: r.close, sma50: r.sma50 && { dist: r.sma50.dist, side: r.sma50.side, days: r.sma50.days, liveDist: r.sma50.liveDist }, sma365: r.sma365 && { dist: r.sma365.dist, side: r.sma365.side, days: r.sma365.days, liveDist: r.sma365.liveDist }, hma144: r.hma144 && { dist: r.hma144.dist } });
-    } catch (e) { fail('top10', sym, e); rows.push({ sym: String(c.symbol).toUpperCase(), rank: c.market_cap_rank, tv: sym, err: String(e.message) }); }
+    } catch (e) { skipped.push({ sym: String(c.symbol).toUpperCase(), rank: c.market_cap_rank, tv: sym, err: String(e.message).slice(0, 80) }); }
   }
   const ok = rows.filter((r) => r.sma50);
   out.top10 = {
-    rows,
+    rows, skipped,
     summary: {
       below50: ok.filter((r) => r.sma50.side === 'below').length,
       near365: ok.filter((r) => r.sma365 && Math.abs(r.sma365.dist) <= 1).length,
