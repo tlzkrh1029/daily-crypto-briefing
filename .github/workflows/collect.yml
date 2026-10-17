@@ -1,0 +1,65 @@
+name: Collect briefing data
+
+# Collects the numbers for the daily crypto briefing and commits data/latest.json.
+# The Claude cloud scheduled tasks (06:10 and 08:35 KST) clone this repo and read that file;
+# they cannot reach TradingView, Yahoo, CoinGecko, Upbit or Bithumb themselves.
+# TradingView is read with the anonymous chart token (no login cookies).
+# GitHub cron can start late, so the follow-up slot runs twice; the later run overwrites the earlier one.
+# GitHub disables a public repo's schedule after 60 days without activity; the data commits are that
+# activity. Never add keepalive commits.
+on:
+  schedule:
+    - cron: '7 20 * * *'    # 05:07 KST  morning
+    - cron: '47 22 * * *'   # 07:47 KST  follow-up (1st)
+    - cron: '17 23 * * *'   # 08:17 KST  follow-up (2nd)
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'morning or followup (empty = by KST time)'
+        type: choice
+        options: ['', morning, followup]
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Collect
+        env:
+          SLOT: ${{ inputs.slot }}
+        run: node scripts/collect.mjs
+
+      - name: Commit data
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -q -m "Briefing data $(TZ=Asia/Seoul date '+%F %H:%M') KST"
+            for i in 1 2 3; do
+              if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then break; fi
+              git rebase --abort 2>/dev/null || true
+              if [ "$i" = 3 ]; then echo "::error::could not push the data"; exit 1; fi
+              sleep $((i * 15))
+            done
+          fi
