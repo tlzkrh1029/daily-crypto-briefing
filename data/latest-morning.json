@@ -1,0 +1,3088 @@
+{
+ "meta": {
+  "generatedAt": "2026-10-17T06:38:30.363Z",
+  "generatedKST": "2026-10-17 15:38",
+  "slot": "morning",
+  "local": false,
+  "sections": {
+   "ledger": "ok 2.3s",
+   "snapshot": "ok 3.6s",
+   "ma": "ok 1.6s",
+   "top10": "ok 4.4s",
+   "cptra": "ok 0.8s",
+   "igv": "ok 0.3s",
+   "movers": "ok 0.0s",
+   "deriv": "ok 0.5s",
+   "scan": "failed",
+   "sectors": "failed",
+   "charts": "ok 0.3s"
+  },
+  "failures": [
+   {
+    "section": "top10",
+    "what": "CRYPTO:FIGR_HELOCUSD",
+    "error": "symbol_error: [\"sds_sym_1\",\"invalid symbol\"]"
+   },
+   {
+    "section": "scan",
+    "what": "section",
+    "error": "ENOENT: no such file or directory, open 'data/scan-history.json'"
+   },
+   {
+    "section": "sectors",
+    "what": "section",
+    "error": "ENOENT: no such file or directory, open 'data/ubcs.json'"
+   }
+  ]
+ },
+ "ledger": {
+  "BTC.D": {
+   "bars": 4579,
+   "first": "2014-04-01",
+   "closeDate": "2026-10-16",
+   "close": 60.4182408832084,
+   "live": 60.387978574563284,
+   "liveChg": -0.03,
+   "chg1d": 0.041,
+   "chg7d": 0.36,
+   "chg30d": 1.102,
+   "unit": "%p",
+   "range40": {
+    "hi": 60.377284755802485,
+    "lo": 59.001453123521195
+   },
+   "sma50": {
+    "line": 59.65609370232772,
+    "dist": 1.28,
+    "side": "above",
+    "days": 10,
+    "since": "2026-10-07",
+    "liveLine": 59.66326916538317,
+    "liveDist": 1.21,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 59.76653677640415,
+    "dist": 1.09,
+    "side": "above",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": 0.17,
+    "liveLine": 59.79286445161942,
+    "liveDist": 1,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 59.55811314902478,
+    "dist": 1.44,
+    "side": "above",
+    "days": 13,
+    "since": "2026-10-04",
+    "slope20": 0.14,
+    "liveLine": 59.56633286397863,
+    "liveDist": 1.38,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 59.46149983328864,
+    "dist": 1.61,
+    "side": "above",
+    "days": 16,
+    "since": "2026-10-01",
+    "slope20": 0.05,
+    "liveLine": 59.46355988229371,
+    "liveDist": 1.55,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 55.342269908945134,
+    "dist": 9.17,
+    "side": "above",
+    "days": 1096,
+    "since": "2023-10-17",
+    "slope20": 0.46,
+    "liveLine": 55.3550299878127,
+    "liveDist": 9.09,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.015,
+    "3D": 1.011,
+    "1W": 1.03
+   }
+  },
+  "USDT.D": {
+   "bars": 4241,
+   "first": "2015-03-08",
+   "closeDate": "2026-10-16",
+   "close": 6.763804783264875,
+   "live": 6.762650324739698,
+   "liveChg": -0.001,
+   "chg1d": 0.04,
+   "chg7d": 0.101,
+   "chg30d": -0.345,
+   "unit": "%p",
+   "range40": {
+    "hi": 7.17880193964299,
+    "lo": 6.295275143348118
+   },
+   "sma50": {
+    "line": 6.720896791523121,
+    "dist": 0.64,
+    "side": "above",
+    "days": 3,
+    "since": "2026-10-14",
+    "liveLine": 6.715320836559093,
+    "liveDist": 0.7,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 6.184750623174751,
+    "dist": 9.36,
+    "side": "above",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": -1.38,
+    "liveLine": 6.174498204925958,
+    "liveDist": 9.53,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 7.69602236651836,
+    "dist": -12.11,
+    "side": "below",
+    "days": 59,
+    "since": "2026-08-19",
+    "slope20": -1.54,
+    "liveLine": 7.6902345152449945,
+    "liveDist": -12.06,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 7.194460474340474,
+    "dist": -5.99,
+    "side": "below",
+    "days": 29,
+    "since": "2026-09-18",
+    "slope20": 1.56,
+    "liveLine": 7.1990062085994255,
+    "liveDist": -6.06,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 6.184970644793368,
+    "dist": 9.36,
+    "side": "above",
+    "days": 273,
+    "since": "2026-01-17",
+    "slope20": -0.23,
+    "liveLine": 6.184382937141346,
+    "liveDist": 9.35,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 0.898,
+    "3D": 0.977,
+    "1W": 1.112
+   }
+  },
+  "USDC.D": {
+   "bars": 2857,
+   "first": "2018-12-21",
+   "closeDate": "2026-10-16",
+   "close": 2.6820260177006428,
+   "live": 2.681246459622352,
+   "liveChg": -0.001,
+   "chg1d": 0.027,
+   "chg7d": 0.044,
+   "chg30d": -0.176,
+   "unit": "%p",
+   "range40": {
+    "hi": 2.889959803449139,
+    "lo": 2.543845114535297
+   },
+   "sma50": {
+    "line": 2.711735486776691,
+    "dist": -1.1,
+    "side": "below",
+    "days": 95,
+    "since": "2026-07-14",
+    "liveLine": 2.7085050776174553,
+    "liveDist": -1.01,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 2.5100999793301875,
+    "dist": 6.85,
+    "side": "above",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": -1.52,
+    "liveLine": 2.5046900341934704,
+    "liveDist": 7.05,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 3.104579011946974,
+    "dist": -13.61,
+    "side": "below",
+    "days": 59,
+    "since": "2026-08-19",
+    "slope20": -2.18,
+    "liveLine": 3.1013849092689956,
+    "liveDist": -13.55,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 2.922315654976114,
+    "dist": -8.22,
+    "side": "below",
+    "days": 31,
+    "since": "2026-09-16",
+    "slope20": 1.35,
+    "liveLine": 2.9238089302127097,
+    "liveDist": -8.3,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 2.4409482078808997,
+    "dist": 9.88,
+    "side": "above",
+    "days": 259,
+    "since": "2026-01-31",
+    "slope20": -1.42,
+    "liveLine": 2.4393680824505664,
+    "liveDist": 9.92,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 0.889,
+    "3D": 0.955,
+    "1W": 1.161
+   }
+  },
+  "OTHERS.D": {
+   "bars": 4610,
+   "first": "2014-03-01",
+   "closeDate": "2026-10-16",
+   "close": 8.260931173620962,
+   "live": 8.25971824393673,
+   "liveChg": -0.001,
+   "chg1d": -0.042,
+   "chg7d": -0.131,
+   "chg30d": 0.348,
+   "unit": "%p",
+   "range40": {
+    "hi": 8.838117791228498,
+    "lo": 7.666278599749471
+   },
+   "sma50": {
+    "line": 8.141895024078744,
+    "dist": 1.46,
+    "side": "above",
+    "days": 44,
+    "since": "2026-09-03",
+    "liveLine": 8.159746657704028,
+    "liveDist": 1.23,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 8.308816097864925,
+    "dist": -0.58,
+    "side": "below",
+    "days": 1,
+    "since": "2026-10-16",
+    "slope5": 1.48,
+    "liveLine": 8.32808758585224,
+    "liveDist": -0.82,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 7.755870788834572,
+    "dist": 6.51,
+    "side": "above",
+    "days": 43,
+    "since": "2026-09-04",
+    "slope20": 1.42,
+    "liveLine": 7.759965886190721,
+    "liveDist": 6.44,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 7.477845827047884,
+    "dist": 10.47,
+    "side": "above",
+    "days": 47,
+    "since": "2026-08-31",
+    "slope20": 0.74,
+    "liveLine": 7.481729078318965,
+    "liveDist": 10.4,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 9.446462160574924,
+    "dist": -12.55,
+    "side": "below",
+    "days": 677,
+    "since": "2024-12-09",
+    "slope20": -0.59,
+    "liveLine": 9.443544998188235,
+    "liveDist": -12.54,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.046,
+    "3D": 1.087,
+    "1W": 0.96
+   }
+  },
+  "OTHERS": {
+   "bars": 4607,
+   "first": "2014-03-01",
+   "closeDate": "2026-10-16",
+   "close": 224005043603,
+   "live": 224010388063,
+   "liveChg": 0,
+   "chg1d": -1.32,
+   "chg7d": -3.39,
+   "chg30d": 9.79,
+   "unit": "%",
+   "range40": {
+    "hi": 253634975693,
+    "lo": 196995205778
+   },
+   "sma50": {
+    "line": 223181194469.15985,
+    "dist": 0.37,
+    "side": "above",
+    "days": 59,
+    "since": "2026-08-19",
+    "liveLine": 223824954048.33984,
+    "liveDist": 0.08,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 241689384463.8968,
+    "dist": -7.32,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "slope5": 2.41,
+    "liveLine": 242471066062.15924,
+    "liveDist": -7.61,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 188973689009.60004,
+    "dist": 18.54,
+    "side": "above",
+    "days": 58,
+    "since": "2026-08-20",
+    "slope20": 3.43,
+    "liveLine": 189229142805.13504,
+    "liveDist": 18.38,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 195999451103.61642,
+    "dist": 14.29,
+    "side": "above",
+    "days": 31,
+    "since": "2026-09-16",
+    "slope20": -1.55,
+    "liveLine": 195946086344.19727,
+    "liveDist": 14.32,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 201580925818.4915,
+    "dist": 11.12,
+    "side": "above",
+    "days": 31,
+    "since": "2026-09-16",
+    "slope20": 0.86,
+    "liveLine": 201657258825.19785,
+    "liveDist": 11.08,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.139,
+    "3D": 1.082,
+    "1W": 0.999
+   }
+  },
+  "TOTALE50.D": {
+   "bars": 516,
+   "first": "2025-05-19",
+   "closeDate": "2026-10-16",
+   "close": 1.778128196068203,
+   "live": 1.7739662164086505,
+   "liveChg": -0.004,
+   "chg1d": -0.005,
+   "chg7d": -0.009,
+   "chg30d": 0.195,
+   "unit": "%p",
+   "range40": {
+    "hi": 1.8849204051771202,
+    "lo": 1.5708495299647962
+   },
+   "sma50": {
+    "line": 1.680266034521803,
+    "dist": 5.82,
+    "side": "above",
+    "days": 43,
+    "since": "2026-09-04",
+    "liveLine": 1.6859216571888163,
+    "liveDist": 5.22,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 1.704419678844173,
+    "dist": 4.32,
+    "side": "above",
+    "days": 45,
+    "since": "2026-09-02",
+    "slope5": 2.36,
+    "liveLine": 1.7116363580861167,
+    "liveDist": 3.64,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 1.6439053585449974,
+    "dist": 8.16,
+    "side": "above",
+    "days": 30,
+    "since": "2026-09-17",
+    "slope20": 1.22,
+    "liveLine": 1.6448897526923658,
+    "liveDist": 7.85,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 1.6348435101434595,
+    "dist": 8.76,
+    "side": "above",
+    "days": 29,
+    "since": "2026-09-18",
+    "slope20": -0.26,
+    "liveLine": 1.6351919099718724,
+    "liveDist": 8.49,
+    "crossIfClose": false
+   },
+   "sma1461": null,
+   "wma200x": {
+    "1D": 1.072,
+    "3D": null,
+    "1W": null
+   }
+  },
+  "TOTALE100.D": {
+   "bars": 516,
+   "first": "2025-05-19",
+   "closeDate": "2026-10-16",
+   "close": 0.27232434234301534,
+   "live": 0.2723995995938526,
+   "liveChg": 0,
+   "chg1d": 0,
+   "chg7d": -0.01,
+   "chg30d": 0.021,
+   "unit": "%p",
+   "range40": {
+    "hi": 0.292689893009131,
+    "lo": 0.24979017830531008
+   },
+   "sma50": {
+    "line": 0.26815030499055464,
+    "dist": 1.56,
+    "side": "above",
+    "days": 30,
+    "since": "2026-09-17",
+    "liveLine": 0.2687383918006889,
+    "liveDist": 1.36,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 0.2674006283346527,
+    "dist": 1.84,
+    "side": "above",
+    "days": 46,
+    "since": "2026-09-01",
+    "slope5": 2.01,
+    "liveLine": 0.2682499042942425,
+    "liveDist": 1.55,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 0.2833468706249571,
+    "dist": -3.89,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "slope20": -0.2,
+    "liveLine": 0.2833112746104678,
+    "liveDist": -3.85,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 0.29691680200954856,
+    "dist": -8.28,
+    "side": "below",
+    "days": 152,
+    "since": "2026-05-18",
+    "slope20": -1.57,
+    "liveLine": 0.2967402141235994,
+    "liveDist": -8.2,
+    "crossIfClose": false
+   },
+   "sma1461": null,
+   "wma200x": {
+    "1D": 0.991,
+    "3D": null,
+    "1W": null
+   }
+  },
+  "TOTAL": {
+   "bars": 4610,
+   "first": "2014-03-01",
+   "closeDate": "2026-10-16",
+   "close": 2711619778631,
+   "live": 2712083363371,
+   "liveChg": 0.02,
+   "chg1d": -0.82,
+   "chg7d": -1.85,
+   "chg30d": 5.16,
+   "unit": "%",
+   "range40": {
+    "hi": 2913721648558,
+    "lo": 2553338682598
+   },
+   "sma50": {
+    "line": 2736233247442.8613,
+    "dist": -0.9,
+    "side": "below",
+    "days": 3,
+    "since": "2026-10-14",
+    "liveLine": 2738399754307.8213,
+    "liveDist": -0.96,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 2911260890284.1562,
+    "dist": -6.86,
+    "side": "below",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": 1.14,
+    "liveLine": 2915080713707.518,
+    "liveDist": -6.96,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 2434637487730.8975,
+    "dist": 11.38,
+    "side": "above",
+    "days": 59,
+    "since": "2026-08-19",
+    "slope20": 1.81,
+    "liveLine": 2436578053090.3677,
+    "liveDist": 11.31,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 2634171725969.5986,
+    "dist": 2.94,
+    "side": "above",
+    "days": 29,
+    "since": "2026-09-18",
+    "slope20": -2.28,
+    "liveLine": 2631852609800.2124,
+    "liveDist": 3.05,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 2228709383439.09,
+    "dist": 21.67,
+    "side": "above",
+    "days": 61,
+    "since": "2026-08-17",
+    "slope20": 1.19,
+    "liveLine": 2229950820418.3257,
+    "liveDist": 21.62,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.092,
+    "3D": 0.993,
+    "1W": 1.019
+   }
+  },
+  "TOTAL3ESBTC": {
+   "bars": 4579,
+   "first": "2014-04-01",
+   "closeDate": "2026-10-16",
+   "close": 0.3023104034259805,
+   "live": 0.30240295213210744,
+   "liveChg": 0.03,
+   "chg1d": -0.73,
+   "chg7d": -2.87,
+   "chg30d": -1.8,
+   "unit": "%",
+   "range40": {
+    "hi": 0.3297229997235785,
+    "lo": 0.30176953244607874
+   },
+   "sma50": {
+    "line": 0.3114151632044932,
+    "dist": -2.92,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "liveLine": 0.3115358162629733,
+    "liveDist": -2.93,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 0.3159298163611243,
+    "dist": -4.31,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "slope5": 0.37,
+    "liveLine": 0.3159468297627893,
+    "liveDist": -4.29,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 0.30185946862591545,
+    "dist": 0.15,
+    "side": "above",
+    "days": 42,
+    "since": "2026-09-05",
+    "slope20": 0.25,
+    "liveLine": 0.3018437736802275,
+    "liveDist": 0.19,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 0.30884585963655425,
+    "dist": -2.12,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "slope20": -0.57,
+    "liveLine": 0.3087831985680195,
+    "liveDist": -2.07,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 0.3858010375307409,
+    "dist": -21.64,
+    "side": "below",
+    "days": 1310,
+    "since": "2023-03-17",
+    "slope20": -1.19,
+    "liveLine": 0.38556883860020386,
+    "liveDist": -21.57,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 0.991,
+    "3D": 0.973,
+    "1W": 0.887
+   }
+  },
+  "ΣSTABLECOIN.D": {
+   "bars": 2857,
+   "first": "2018-12-21",
+   "closeDate": "2026-10-16",
+   "close": 9.445830800965517,
+   "live": 9.44389678436205,
+   "liveChg": -0.002,
+   "chg1d": 0.067,
+   "chg7d": 0.145,
+   "chg30d": -0.521,
+   "unit": "%p",
+   "range40": {
+    "hi": 10.068761743092129,
+    "lo": 8.860616262564754
+   },
+   "sma50": {
+    "line": 9.432632278299849,
+    "dist": 0.14,
+    "side": "above",
+    "days": 1,
+    "since": "2026-10-16",
+    "liveLine": 9.423825914176586,
+    "liveDist": 0.21,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 8.694850602504939,
+    "dist": 8.64,
+    "side": "above",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": -1.42,
+    "liveLine": 8.679188239119425,
+    "liveDist": 8.81,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 10.800601378465332,
+    "dist": -12.54,
+    "side": "below",
+    "days": 59,
+    "since": "2026-08-19",
+    "slope20": -1.73,
+    "liveLine": 10.79161942451399,
+    "liveDist": -12.49,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 10.11677612931663,
+    "dist": -6.63,
+    "side": "below",
+    "days": 30,
+    "since": "2026-09-17",
+    "slope20": 1.5,
+    "liveLine": 10.122815138812179,
+    "liveDist": -6.71,
+    "crossIfClose": false
+   },
+   "sma1461": {
+    "line": 8.625918852674232,
+    "dist": 9.51,
+    "side": "above",
+    "days": 270,
+    "since": "2026-01-20",
+    "slope20": -0.57,
+    "liveLine": 8.623751019591877,
+    "liveDist": 9.51,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 0.896,
+    "1W": 1.126
+   },
+   "note": "USDT.D + USDC.D (구성 지표 합)"
+  },
+  "BTC.D/OTHERS.D": {
+   "bars": 4579,
+   "first": "2014-04-01",
+   "closeDate": "2026-10-16",
+   "close": 7.313732509494526,
+   "live": 7.311142679581439,
+   "liveChg": -0.04,
+   "chg1d": 0.57,
+   "chg7d": 2.2,
+   "chg30d": -2.44,
+   "unit": "%",
+   "range40": {
+    "hi": 7.751269363047163,
+    "lo": 6.6893566847130455
+   },
+   "sma50": {
+    "line": 7.348413582175174,
+    "dist": -0.47,
+    "side": "below",
+    "days": 43,
+    "since": "2026-09-04",
+    "liveLine": 7.331671612429757,
+    "liveDist": -0.28,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 7.21352169866054,
+    "dist": 1.39,
+    "side": "above",
+    "days": 3,
+    "since": "2026-10-14",
+    "slope5": -1.42,
+    "liveLine": 7.197864381155853,
+    "liveDist": 1.57,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 7.985925258277732,
+    "dist": -8.42,
+    "side": "below",
+    "days": 43,
+    "since": "2026-09-04",
+    "slope20": -0.61,
+    "liveLine": 7.982077015177693,
+    "liveDist": -8.41,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 0.967
+   },
+   "note": "구성 지표 비"
+  }
+ },
+ "snapshot": {
+  "CRYPTOCAP:BTC.D": {
+   "close": 60.385766275833795,
+   "change": -0.057,
+   "change_abs": -0.03423127910179602,
+   "perfW": 0.547,
+   "perf1M": 1.817,
+   "perf3M": 1.878
+  },
+  "CRYPTOCAP:USDT.D": {
+   "close": 6.762600969994223,
+   "change": -0.017,
+   "change_abs": -0.0011360810607587979,
+   "perfW": 1.493,
+   "perf1M": -4.851,
+   "perf3M": -19.464
+  },
+  "CRYPTOCAP:USDC.D": {
+   "close": 2.681253741383969,
+   "change": -0.03,
+   "change_abs": -0.0007990963010140462,
+   "perfW": 1.478,
+   "perf1M": -6.423,
+   "perf3M": -19.77
+  },
+  "CRYPTOCAP:OTHERS.D": {
+   "close": 8.259899263042056,
+   "change": -0.012,
+   "change_abs": -0.001031910578905837,
+   "perfW": -1.551,
+   "perf1M": 4.317,
+   "perf3M": 6.629
+  },
+  "CRYPTOCAP:OTHERS": {
+   "close": 224014689069,
+   "change": 0.004,
+   "change_abs": 9645466,
+   "perfW": -3.361,
+   "perf1M": 9.703,
+   "perf3M": 31.904
+  },
+  "CRYPTOCAP:TOTALE50.D": {
+   "close": 1.7739787577731547,
+   "change": -0.233,
+   "change_abs": -0.004149438295048213,
+   "perfW": -0.71,
+   "perf1M": 11.633,
+   "perf3M": 8.405
+  },
+  "CRYPTOCAP:TOTALE100.D": {
+   "close": 0.2723869745962783,
+   "change": 0.019,
+   "change_abs": 0.000052860012992039795,
+   "perfW": -3.445,
+   "perf1M": 7.922,
+   "perf3M": -0.692
+  },
+  "CRYPTOCAP:TOTAL": {
+   "close": 2712075316358,
+   "change": 0.017,
+   "change_abs": 455537727,
+   "perfW": -1.838,
+   "perf1M": 5.162,
+   "perf3M": 23.704
+  },
+  "CRYPTOCAP:TOTAL3ESBTC": {
+   "close": 0.30240346459479067,
+   "change": 0.035,
+   "change_abs": 0.00010561461138158812,
+   "perfW": -2.835,
+   "perf1M": -1.8,
+   "perf3M": 1.655
+  },
+  "BITSTAMP:BTCUSD": {
+   "close": 81488.13,
+   "change": -0.016,
+   "change_abs": -12.970000000001164,
+   "perfW": -1.301,
+   "perf1M": 7.026,
+   "perf3M": 25.768
+  },
+  "BITSTAMP:ETHUSD": {
+   "close": 2429.15,
+   "change": 0.379,
+   "change_abs": 9.170000000000073,
+   "perfW": -2.265,
+   "perf1M": 0.523,
+   "perf3M": 30.472
+  },
+  "CRYPTO:XMRUSD": {
+   "close": 558.43,
+   "change": 0.181,
+   "change_abs": 1.009999999999991,
+   "perfW": 7.63,
+   "perf1M": 11.93,
+   "perf3M": 66.303
+  },
+  "CRYPTO:ZECUSD": {
+   "close": 1163.71,
+   "change": 1.422,
+   "change_abs": 16.319999999999936,
+   "perfW": -3.425,
+   "perf1M": -12.932,
+   "perf3M": 108.464
+  },
+  "CRYPTO:RUNEUSD": {
+   "close": 0.64109,
+   "change": -0.028,
+   "change_abs": -0.00017999999999995797,
+   "perfW": -8.589,
+   "perf1M": 30.459,
+   "perf3M": 49.122
+  },
+  "CRYPTO:HYPEHUSD": {
+   "close": 79.754,
+   "change": -0.617,
+   "change_abs": -0.49499999999999034,
+   "perfW": -5.226,
+   "perf1M": 1.935,
+   "perf3M": 32.499
+  },
+  "CRYPTO:ARBIUSD": {
+   "close": 0.18914,
+   "change": -1.02,
+   "change_abs": -0.0019500000000000073,
+   "perfW": 3.604,
+   "perf1M": 12.516,
+   "perf3M": 114.187
+  },
+  "CRYPTO:UNIUSD": {
+   "close": 7.3047,
+   "change": -0.273,
+   "change_abs": -0.019999999999999574,
+   "perfW": -0.179,
+   "perf1M": 8.957,
+   "perf3M": 104.797
+  },
+  "CRYPTO:USELESSUSD": {
+   "close": 0.16026,
+   "change": -1.814,
+   "change_abs": -0.0029599999999999904,
+   "perfW": -13.457,
+   "perf1M": -30.563,
+   "perf3M": 161.709
+  },
+  "CRYPTO:SPX6USD": {
+   "close": 0.3526,
+   "change": -0.838,
+   "change_abs": -0.0029799999999999827,
+   "perfW": -5.116,
+   "perf1M": -22.669,
+   "perf3M": 2.886
+  },
+  "_note": "change = 09:00 KST(00:00 UTC) 기준 당일 변동률. 도미넌스는 %이며 %p가 아니다(%p는 ledger의 liveChg)."
+ },
+ "ma": {
+  "BTC": {
+   "symbol": "BITSTAMP:BTCUSD",
+   "bars": 1999,
+   "first": "2021-04-27",
+   "closeDate": "2026-10-16",
+   "close": 81501.1,
+   "live": 81488.14,
+   "liveChg": -0.02,
+   "chg1d": -0.77,
+   "chg7d": -1.29,
+   "chg30d": 7.04,
+   "unit": "%",
+   "range40": {
+    "hi": 86586.52,
+    "lo": 75577.29
+   },
+   "sma50": {
+    "line": 81251.6943999999,
+    "dist": 0.31,
+    "side": "above",
+    "days": 61,
+    "since": "2026-08-17",
+    "liveLine": 81324.75359999991,
+    "liveDist": 0.2,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 86518.02936831686,
+    "dist": -5.8,
+    "side": "below",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": 1.29,
+    "liveLine": 86664.94798036494,
+    "liveDist": -5.97,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 72360.1,
+    "dist": 12.63,
+    "side": "above",
+    "days": 59,
+    "since": "2026-08-19",
+    "slope20": 1.91,
+    "liveLine": 72426.4657,
+    "liveDist": 12.51,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 78314.65753424661,
+    "dist": 4.07,
+    "side": "above",
+    "days": 29,
+    "since": "2026-09-18",
+    "slope20": -2.27,
+    "liveLine": 78246.19764383565,
+    "liveDist": 4.14,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.106,
+    "1W": 1.03
+   }
+  },
+  "ETH": {
+   "symbol": "BITSTAMP:ETHUSD",
+   "bars": 1999,
+   "first": "2021-04-27",
+   "closeDate": "2026-10-16",
+   "close": 2419.98,
+   "live": 2429.15,
+   "liveChg": 0.38,
+   "chg1d": -0.78,
+   "chg7d": -2.63,
+   "chg30d": 0.16,
+   "unit": "%",
+   "range40": {
+    "hi": 2775.81,
+    "lo": 2396.3
+   },
+   "sma50": {
+    "line": 2552.300000000004,
+    "dist": -5.18,
+    "side": "below",
+    "days": 9,
+    "since": "2026-10-08",
+    "liveLine": 2552.0306000000037,
+    "liveDist": -4.82,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 2778.3675102975235,
+    "dist": -12.9,
+    "side": "below",
+    "days": 11,
+    "since": "2026-10-06",
+    "slope5": 0.42,
+    "liveLine": 2777.240694525527,
+    "liveDist": -12.53,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 2144.753699999987,
+    "dist": 12.83,
+    "side": "above",
+    "days": 59,
+    "since": "2026-08-19",
+    "slope20": 2.24,
+    "liveLine": 2146.3828499999872,
+    "liveDist": 13.17,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 2443.042904109589,
+    "dist": -0.94,
+    "side": "below",
+    "days": 3,
+    "since": "2026-10-14",
+    "slope20": -3.59,
+    "liveLine": 2439.196958904109,
+    "liveDist": -0.41,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.096,
+    "1W": 0.906
+   }
+  },
+  "XMR": {
+   "symbol": "CRYPTO:XMRUSD",
+   "bars": 1999,
+   "first": "2021-04-27",
+   "closeDate": "2026-10-16",
+   "close": 557.46,
+   "live": 558.39,
+   "liveChg": 0.17,
+   "chg1d": 1.54,
+   "chg7d": 7.44,
+   "chg30d": 11.76,
+   "unit": "%",
+   "range40": {
+    "hi": 590.95,
+    "lo": 498.79
+   },
+   "sma50": {
+    "line": 534.0351999999997,
+    "dist": 4.39,
+    "side": "above",
+    "days": 6,
+    "since": "2026-10-11",
+    "liveLine": 535.7623999999997,
+    "liveDist": 4.22,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 585.3710377413812,
+    "dist": -4.77,
+    "side": "below",
+    "days": 11,
+    "since": "2026-10-06",
+    "slope5": 1.34,
+    "liveLine": 586.7671368211076,
+    "liveDist": -4.84,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 404.1271999999992,
+    "dist": 37.94,
+    "side": "above",
+    "days": 73,
+    "since": "2026-08-05",
+    "slope20": 5.16,
+    "liveLine": 405.2470499999992,
+    "liveDist": 37.79,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 399.77257534246604,
+    "dist": 39.44,
+    "side": "above",
+    "days": 73,
+    "since": "2026-08-05",
+    "slope20": 3.29,
+    "liveLine": 400.50430136986336,
+    "liveDist": 39.42,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.268,
+    "1W": 1.854
+   }
+  },
+  "ZEC": {
+   "symbol": "CRYPTO:ZECUSD",
+   "bars": 1999,
+   "first": "2021-04-27",
+   "closeDate": "2026-10-16",
+   "close": 1147.34,
+   "live": 1163.73,
+   "liveChg": 1.43,
+   "chg1d": -5.94,
+   "chg7d": -4.78,
+   "chg30d": -14.16,
+   "unit": "%",
+   "range40": {
+    "hi": 1652.72,
+    "lo": 1062.31
+   },
+   "sma50": {
+    "line": 1243.7871999999998,
+    "dist": -7.75,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "liveLine": 1251.0523999999998,
+    "liveDist": -6.98,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 1477.9106956255296,
+    "dist": -22.37,
+    "side": "below",
+    "days": 12,
+    "since": "2026-10-05",
+    "slope5": 2.39,
+    "liveLine": 1481.783646056984,
+    "liveDist": -21.46,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 668.7843499999997,
+    "dist": 71.56,
+    "side": "above",
+    "days": 110,
+    "since": "2026-06-29",
+    "slope20": 19.11,
+    "liveLine": 673.3614999999998,
+    "liveDist": 72.82,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 531.0706575342467,
+    "dist": 116.04,
+    "side": "above",
+    "days": 406,
+    "since": "2025-09-06",
+    "slope20": 13.25,
+    "liveLine": 533.6621095890413,
+    "liveDist": 118.06,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.38,
+    "1W": 4.131
+   }
+  },
+  "RUNE": {
+   "symbol": "CRYPTO:RUNEUSD",
+   "bars": 1999,
+   "first": "2021-04-27",
+   "closeDate": "2026-10-16",
+   "close": 0.64132,
+   "live": 0.64109,
+   "liveChg": -0.04,
+   "chg1d": -0.09,
+   "chg7d": -8.54,
+   "chg30d": 30.51,
+   "unit": "%",
+   "range40": {
+    "hi": 0.7991,
+    "lo": 0.47976
+   },
+   "sma50": {
+    "line": 0.6056513999999971,
+    "dist": 5.89,
+    "side": "above",
+    "days": 59,
+    "since": "2026-08-19",
+    "liveLine": 0.6089253999999971,
+    "liveDist": 5.28,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 0.6840602689632969,
+    "dist": -6.25,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "slope5": 4.05,
+    "liveLine": 0.6877708779672628,
+    "liveDist": -6.79,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 0.4785260999999986,
+    "dist": 34.02,
+    "side": "above",
+    "days": 58,
+    "since": "2026-08-20",
+    "slope20": 6.63,
+    "liveLine": 0.4796670999999986,
+    "liveDist": 33.65,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 0.5248435342465869,
+    "dist": 22.19,
+    "side": "above",
+    "days": 28,
+    "since": "2026-09-19",
+    "slope20": -3.59,
+    "liveLine": 0.5243031232876828,
+    "liveDist": 22.27,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.25,
+    "1W": 0.332
+   }
+  },
+  "HYPE": {
+   "symbol": "CRYPTO:HYPEHUSD",
+   "bars": 686,
+   "first": "2024-11-30",
+   "closeDate": "2026-10-16",
+   "close": 80.263,
+   "live": 79.764,
+   "liveChg": -0.62,
+   "chg1d": -1.76,
+   "chg7d": -4.62,
+   "chg30d": 2.59,
+   "unit": "%",
+   "range40": {
+    "hi": 97.22,
+    "lo": 76.945
+   },
+   "sma50": {
+    "line": 86.03258000000001,
+    "dist": -6.71,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "liveLine": 86.00908000000001,
+    "liveDist": -7.26,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 93.23764460067196,
+    "dist": -13.92,
+    "side": "below",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": 1.17,
+    "liveLine": 93.29116286749716,
+    "liveDist": -14.5,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 63.45438000000001,
+    "dist": 26.49,
+    "side": "above",
+    "days": 220,
+    "since": "2026-03-11",
+    "slope20": 8.16,
+    "liveLine": 63.670370000000005,
+    "liveDist": 25.28,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 49.422109589041135,
+    "dist": 62.4,
+    "side": "above",
+    "days": 222,
+    "since": "2026-03-09",
+    "slope20": 4.95,
+    "liveLine": 49.54339726027401,
+    "liveDist": 61,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.106,
+    "1W": null
+   }
+  },
+  "ARB": {
+   "symbol": "CRYPTO:ARBIUSD",
+   "bars": 1304,
+   "first": "2023-03-23",
+   "closeDate": "2026-10-16",
+   "close": 0.19114,
+   "live": 0.18915,
+   "liveChg": -1.04,
+   "chg1d": -2.18,
+   "chg7d": 4.7,
+   "chg30d": 13.71,
+   "unit": "%",
+   "range40": {
+    "hi": 0.23517,
+    "lo": 0.13305
+   },
+   "sma50": {
+    "line": 0.17618195999999983,
+    "dist": 8.49,
+    "side": "above",
+    "days": 47,
+    "since": "2026-08-31",
+    "liveLine": 0.17820875999999986,
+    "liveDist": 6.14,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 0.205852603806689,
+    "dist": -7.15,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "slope5": 4.43,
+    "liveLine": 0.2073580524687881,
+    "liveDist": -8.78,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 0.11707195500000361,
+    "dist": 63.27,
+    "side": "above",
+    "days": 47,
+    "since": "2026-08-31",
+    "slope20": 9.07,
+    "liveLine": 0.11755327500000362,
+    "liveDist": 60.91,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 0.1473095780821935,
+    "dist": 29.75,
+    "side": "above",
+    "days": 31,
+    "since": "2026-09-16",
+    "slope20": -6.92,
+    "liveLine": 0.14699522191780992,
+    "liveDist": 28.68,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.465,
+    "1W": null
+   }
+  },
+  "UNI": {
+   "symbol": "CRYPTO:UNIUSD",
+   "bars": 1999,
+   "first": "2021-04-27",
+   "closeDate": "2026-10-16",
+   "close": 7.3251,
+   "live": 7.3027,
+   "liveChg": -0.31,
+   "chg1d": -1.31,
+   "chg7d": 0.1,
+   "chg30d": 9.26,
+   "unit": "%",
+   "range40": {
+    "hi": 10.2149,
+    "lo": 5.9487
+   },
+   "sma50": {
+    "line": 7.537959999999988,
+    "dist": -2.82,
+    "side": "below",
+    "days": 3,
+    "since": "2026-10-14",
+    "liveLine": 7.595293999999988,
+    "liveDist": -3.85,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 8.834355437480738,
+    "dist": -17.08,
+    "side": "below",
+    "days": 10,
+    "since": "2026-10-07",
+    "slope5": 2.43,
+    "liveLine": 8.859954681584904,
+    "liveDist": -17.58,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 4.420465000000016,
+    "dist": 65.71,
+    "side": "above",
+    "days": 59,
+    "since": "2026-08-19",
+    "slope20": 11.37,
+    "liveLine": 4.4392690000000155,
+    "liveDist": 64.5,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 4.721428767123281,
+    "dist": 55.15,
+    "side": "above",
+    "days": 48,
+    "since": "2026-08-30",
+    "slope20": 0.91,
+    "liveLine": 4.724626575342459,
+    "liveDist": 54.57,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.372,
+    "1W": 1.097
+   }
+  },
+  "USELESS": {
+   "symbol": "CRYPTO:USELESSUSD",
+   "bars": 525,
+   "first": "2025-05-10",
+   "closeDate": "2026-10-16",
+   "close": 0.16322,
+   "live": 0.16022,
+   "liveChg": -1.84,
+   "chg1d": -4.92,
+   "chg7d": -11.86,
+   "chg30d": -29.29,
+   "unit": "%",
+   "range40": {
+    "hi": 0.34555,
+    "lo": 0.16879
+   },
+   "sma50": {
+    "line": 0.21565494000000027,
+    "dist": -24.31,
+    "side": "below",
+    "days": 9,
+    "since": "2026-10-08",
+    "liveLine": 0.2176559400000003,
+    "liveDist": -26.39,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 0.25762034145124196,
+    "dist": -36.64,
+    "side": "below",
+    "days": 11,
+    "since": "2026-10-06",
+    "slope5": 1.91,
+    "liveLine": 0.2576972923658465,
+    "liveDist": -37.83,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 0.09807641999999987,
+    "dist": 66.42,
+    "side": "above",
+    "days": 57,
+    "since": "2026-08-21",
+    "slope20": 21.63,
+    "liveLine": 0.09872236499999987,
+    "liveDist": 62.29,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 0.09831383287671228,
+    "dist": 66.02,
+    "side": "above",
+    "days": 46,
+    "since": "2026-09-01",
+    "slope20": -3.22,
+    "liveLine": 0.09790703835616432,
+    "liveDist": 63.65,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 1.233,
+    "1W": null
+   }
+  },
+  "SPX6900": {
+   "symbol": "CRYPTO:SPX6USD",
+   "bars": 1156,
+   "first": "2023-08-18",
+   "closeDate": "2026-10-16",
+   "close": 0.35561,
+   "live": 0.35258,
+   "liveChg": -0.85,
+   "chg1d": 2.69,
+   "chg7d": -4.31,
+   "chg30d": -22,
+   "unit": "%",
+   "range40": {
+    "hi": 0.57692,
+    "lo": 0.3463
+   },
+   "sma50": {
+    "line": 0.46631879999999787,
+    "dist": -23.74,
+    "side": "below",
+    "days": 21,
+    "since": "2026-09-26",
+    "liveLine": 0.4628877999999979,
+    "liveDist": -23.83,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 0.48564867505958403,
+    "dist": -26.78,
+    "side": "below",
+    "days": 24,
+    "since": "2026-09-23",
+    "slope5": -3.08,
+    "liveLine": 0.481815152463203,
+    "liveDist": -26.82,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 0.3842397999999999,
+    "dist": -7.45,
+    "side": "below",
+    "days": 5,
+    "since": "2026-10-12",
+    "slope20": 2.69,
+    "liveLine": 0.38465124999999994,
+    "liveDist": -8.34,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 0.44181936986301223,
+    "dist": -19.51,
+    "side": "below",
+    "days": 24,
+    "since": "2026-09-23",
+    "slope20": -9.56,
+    "liveLine": 0.44009139726027247,
+    "liveDist": -19.88,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 0.869,
+    "1W": null
+   }
+  },
+  "XMR/ZEC": {
+   "symbol": "CRYPTO:XMRUSD/CRYPTO:ZECUSD",
+   "bars": 1999,
+   "first": "2021-04-27",
+   "closeDate": "2026-10-16",
+   "close": 0.48587166838077644,
+   "live": 0.47982779510711243,
+   "liveChg": -1.24,
+   "chg1d": 7.96,
+   "chg7d": 12.84,
+   "chg30d": 30.2,
+   "unit": "%",
+   "range40": {
+    "hi": 0.4872024173734597,
+    "lo": 0.3386054504090227
+   },
+   "sma50": {
+    "line": 0.44231879863028617,
+    "dist": 9.85,
+    "side": "above",
+    "days": 5,
+    "since": "2026-10-12",
+    "liveLine": 0.44012153340234234,
+    "liveDist": 9.02,
+    "crossIfClose": false
+   },
+   "hma144": {
+    "line": 0.36113973862151144,
+    "dist": 34.54,
+    "side": "above",
+    "days": 12,
+    "since": "2026-10-05",
+    "slope5": -4.63,
+    "liveLine": 0.35899916112635,
+    "liveDist": 33.66,
+    "crossIfClose": false
+   },
+   "sma200": {
+    "line": 0.7083870396926302,
+    "dist": -31.41,
+    "side": "below",
+    "days": 178,
+    "since": "2026-04-22",
+    "slope20": -13.43,
+    "liveLine": 0.704051986159104,
+    "liveDist": -31.85,
+    "crossIfClose": false
+   },
+   "sma365": {
+    "line": 0.9200551309345613,
+    "dist": -47.19,
+    "side": "below",
+    "days": 389,
+    "since": "2025-09-23",
+    "slope20": -10.18,
+    "liveLine": 0.9177061536649693,
+    "liveDist": -47.71,
+    "crossIfClose": false
+   },
+   "wma200x": {
+    "1D": 0.803,
+    "2D": 0.58,
+    "3D": 0.29,
+    "4D": 0.204,
+    "1W": 0.137
+   }
+  }
+ },
+ "premise": {
+  "rule": "BTCUSD 일봉 종가가 SMA50 위 (DONGWOO 관찰의 전제)",
+  "closeDate": "2026-10-16",
+  "close": 81501.1,
+  "sma50": 81251.7,
+  "dist": 0.31,
+  "liveDist": 0.2,
+  "holds": true,
+  "crossIfClose": false
+ },
+ "btcdAlert": {
+  "d1": 0.041,
+  "d7": 0.36,
+  "btcChg1d": -0.77,
+  "btcChg7d": -1.29,
+  "fired": false,
+  "rule": "BTC.D 1일 −0.5%p 이하 또는 1주 −1.5%p 이하 AND BTCUSD 상승"
+ },
+ "top10": {
+  "rows": [
+   {
+    "sym": "ETH",
+    "rank": 2,
+    "tv": "CRYPTO:ETHUSD",
+    "close": 2420.53,
+    "sma50": {
+     "dist": -5.17,
+     "side": "below",
+     "days": 9,
+     "liveDist": -4.83
+    },
+    "sma365": {
+     "dist": -0.93,
+     "side": "below",
+     "days": 3,
+     "liveDist": -0.43
+    },
+    "hma144": {
+     "dist": -12.88
+    }
+   },
+   {
+    "sym": "BNB",
+    "rank": 4,
+    "tv": "CRYPTO:BNBUSD",
+    "close": 720.68,
+    "sma50": {
+     "dist": -3.2,
+     "side": "below",
+     "days": 5,
+     "liveDist": -3.26
+    },
+    "sma365": {
+     "dist": -0.78,
+     "side": "below",
+     "days": 1,
+     "liveDist": -0.63
+    },
+    "hma144": {
+     "dist": -9.32
+    }
+   },
+   {
+    "sym": "XRP",
+    "rank": 5,
+    "tv": "CRYPTO:XRPUSD",
+    "close": 1.3099,
+    "sma50": {
+     "dist": -7.66,
+     "side": "below",
+     "days": 10,
+     "liveDist": -7.73
+    },
+    "sma365": {
+     "dist": -15.4,
+     "side": "below",
+     "days": 340,
+     "liveDist": -15.41
+    },
+    "hma144": {
+     "dist": -13.78
+    }
+   },
+   {
+    "sym": "SOL",
+    "rank": 7,
+    "tv": "CRYPTO:SOLUSD",
+    "close": 104.32,
+    "sma50": {
+     "dist": -4.62,
+     "side": "below",
+     "days": 5,
+     "liveDist": -4.24
+    },
+    "sma365": {
+     "dist": 0.53,
+     "side": "above",
+     "days": 2,
+     "liveDist": 1.14
+    },
+    "hma144": {
+     "dist": -13.24
+    }
+   },
+   {
+    "sym": "TRX",
+    "rank": 8,
+    "tv": "CRYPTO:TRXUSD",
+    "close": 0.3351,
+    "sma50": {
+     "dist": -0.08,
+     "side": "below",
+     "days": 16,
+     "liveDist": -0.05
+    },
+    "sma365": {
+     "dist": 6.73,
+     "side": "above",
+     "days": 218,
+     "liveDist": 6.69
+    },
+    "hma144": {
+     "dist": -0.94
+    }
+   },
+   {
+    "sym": "FIGR_HELOC",
+    "rank": 9,
+    "tv": "CRYPTO:FIGR_HELOCUSD",
+    "err": "symbol_error: [\"sds_sym_1\",\"invalid symbol\"]"
+   },
+   {
+    "sym": "ZEC",
+    "rank": 10,
+    "tv": "CRYPTO:ZECUSD",
+    "close": 1147.34,
+    "sma50": {
+     "dist": -7.75,
+     "side": "below",
+     "days": 5,
+     "liveDist": -6.98
+    },
+    "sma365": {
+     "dist": 116.04,
+     "side": "above",
+     "days": 406,
+     "liveDist": 118.06
+    },
+    "hma144": {
+     "dist": -22.37
+    }
+   },
+   {
+    "sym": "HYPE",
+    "rank": 11,
+    "tv": "CRYPTO:HYPEHUSD",
+    "close": 80.263,
+    "sma50": {
+     "dist": -6.71,
+     "side": "below",
+     "days": 5,
+     "liveDist": -7.26
+    },
+    "sma365": {
+     "dist": 62.4,
+     "side": "above",
+     "days": 222,
+     "liveDist": 61
+    },
+    "hma144": {
+     "dist": -13.92
+    }
+   },
+   {
+    "sym": "DOGE",
+    "rank": 12,
+    "tv": "CRYPTO:DOGEUSD",
+    "close": 0.080846,
+    "sma50": {
+     "dist": -8.36,
+     "side": "below",
+     "days": 9,
+     "liveDist": -8.66
+    },
+    "sma365": {
+     "dist": -24.4,
+     "side": "below",
+     "days": 372,
+     "liveDist": -24.53
+    },
+    "hma144": {
+     "dist": -13.12
+    }
+   },
+   {
+    "sym": "XMR",
+    "rank": 13,
+    "tv": "CRYPTO:XMRUSD",
+    "close": 557.46,
+    "sma50": {
+     "dist": 4.39,
+     "side": "above",
+     "days": 6,
+     "liveDist": 4.22
+    },
+    "sma365": {
+     "dist": 39.44,
+     "side": "above",
+     "days": 73,
+     "liveDist": 39.42
+    },
+    "hma144": {
+     "dist": -4.77
+    }
+   }
+  ],
+  "summary": {
+   "below50": 8,
+   "near365": 3,
+   "below365": 4,
+   "n": 9
+  },
+  "note": "CoinGecko 시총 순, BTC·스테이블·래핑/스테이킹 토큰 제외. 가격은 TradingView CRYPTO:{SYM}USD 일봉."
+ },
+ "cptra": {
+  "date": "2026-10-15",
+  "value": 54.81,
+  "norm": 0.577,
+  "sma5": 0.489,
+  "sma50": 0.612,
+  "sma200": 0.286,
+  "sma50AboveSma200": true,
+  "lastCross": {
+   "date": "2026-08-20",
+   "dir": "up"
+  },
+  "pct365": 0.384,
+  "note": "COINMETRICS:BTC_MINERREVENUEUSD ÷ BTC_TXCOUNT, 100봉 최저·최고 정규화. Coin Metrics 일봉은 하루 늦다. 수준은 BTC 가격과 상관이 높다(1년 0.82, 2026-10-17 계산)."
+ },
+ "igv": {
+  "IGV": {
+   "bars": 1255,
+   "first": "2021-10-18",
+   "closeDate": "2026-10-16",
+   "close": 104.33999633789062,
+   "live": null,
+   "liveChg": null,
+   "chg1d": -4.8,
+   "chg7d": -5.01,
+   "chg30d": -2.44,
+   "unit": "%",
+   "range40": {
+    "hi": 112.66999816894531,
+    "lo": 101.19999694824219
+   },
+   "sma50": {
+    "line": 105.89919998168945,
+    "dist": -1.47,
+    "side": "below",
+    "days": 1,
+    "since": "2026-10-16"
+   },
+   "hma144": {
+    "line": 109.77374401659843,
+    "dist": -4.95,
+    "side": "below",
+    "days": 1,
+    "since": "2026-10-16",
+    "slope5": 1.36
+   },
+   "sma365": {
+    "line": 100.63412385705399,
+    "dist": 3.68,
+    "side": "above",
+    "days": 53,
+    "since": "2026-08-04",
+    "slope20": 0.99
+   },
+   "wma200x": {},
+   "note": "365 SMA는 거래일 365개(약 17개월)"
+  },
+  "SMH": {
+   "bars": 1255,
+   "first": "2021-10-18",
+   "closeDate": "2026-10-16",
+   "close": 539.7899780273438,
+   "live": null,
+   "liveChg": null,
+   "chg1d": -3.41,
+   "chg7d": -13.64,
+   "chg30d": -2.32,
+   "unit": "%",
+   "range40": {
+    "hi": 633.9000244140625,
+    "lo": 541.5
+   },
+   "sma50": {
+    "line": 579.0300012207031,
+    "dist": -6.78,
+    "side": "below",
+    "days": 3,
+    "since": "2026-10-14"
+   },
+   "hma144": {
+    "line": 584.0622607890974,
+    "dist": -7.58,
+    "side": "below",
+    "days": 3,
+    "since": "2026-10-14",
+    "slope5": 0.4
+   },
+   "sma365": {
+    "line": 418.3297095311831,
+    "dist": 29.03,
+    "side": "above",
+    "days": 361,
+    "since": "2025-05-12",
+    "slope20": 5.52
+   },
+   "wma200x": {},
+   "note": "365 SMA는 거래일 365개(약 17개월)"
+  },
+  "SPY": {
+   "bars": 1255,
+   "first": "2021-10-18",
+   "closeDate": "2026-10-16",
+   "close": 763.25,
+   "live": null,
+   "liveChg": null,
+   "chg1d": -1.11,
+   "chg7d": -1.8,
+   "chg30d": -1.04,
+   "unit": "%",
+   "range40": {
+    "hi": 779.0900268554688,
+    "lo": 752.1821899414062
+   },
+   "sma50": {
+    "line": 767.40001953125,
+    "dist": -0.54,
+    "side": "below",
+    "days": 1,
+    "since": "2026-10-16"
+   },
+   "hma144": {
+    "line": 776.0981967556116,
+    "dist": -1.66,
+    "side": "below",
+    "days": 3,
+    "since": "2026-10-14",
+    "slope5": 0.2
+   },
+   "sma365": {
+    "line": 682.6300028761772,
+    "dist": 11.81,
+    "side": "above",
+    "days": 374,
+    "since": "2025-04-23",
+    "slope20": 1.98
+   },
+   "wma200x": {},
+   "note": "365 SMA는 거래일 365개(약 17개월)"
+  }
+ },
+ "movers": {
+  "universe": "CoinGecko 시총 1,000위 안, 24h 거래대금 $1M 이상, 스테이블 제외 (188종)",
+  "gainers": [
+   {
+    "sym": "Q",
+    "name": "Quack AI",
+    "id": "quack-ai",
+    "rank": 134,
+    "price": 0.070992,
+    "chg24h": 31,
+    "chg7d": 142.54,
+    "mcap": 334305059,
+    "vol": 51981033,
+    "turnover": 0.155
+   },
+   {
+    "sym": "A",
+    "name": "Vaulta",
+    "id": "vaulta",
+    "rank": 192,
+    "price": 0.113025,
+    "chg24h": 15.69,
+    "chg7d": 4.68,
+    "mcap": 188900793,
+    "vol": 25149447,
+    "turnover": 0.133
+   },
+   {
+    "sym": "TIA",
+    "name": "Celestia",
+    "id": "celestia",
+    "rank": 92,
+    "price": 0.74963,
+    "chg24h": 14.36,
+    "chg7d": 54.22,
+    "mcap": 736097097,
+    "vol": 323910132,
+    "turnover": 0.44
+   },
+   {
+    "sym": "EIGEN",
+    "name": "EigenCloud (prev. EigenLayer)",
+    "id": "eigenlayer",
+    "rank": 157,
+    "price": 0.270355,
+    "chg24h": 8.18,
+    "chg7d": 22.65,
+    "mcap": 263378795,
+    "vol": 53146005,
+    "turnover": 0.202
+   },
+   {
+    "sym": "LIT",
+    "name": "Lighter",
+    "id": "lighter",
+    "rank": 89,
+    "price": 3.24,
+    "chg24h": 6.46,
+    "chg7d": -9,
+    "mcap": 811127896,
+    "vol": 77015132,
+    "turnover": 0.095
+   },
+   {
+    "sym": "WLD",
+    "name": "Worldcoin",
+    "id": "worldcoin-wld",
+    "rank": 50,
+    "price": 0.530068,
+    "chg24h": 5.35,
+    "chg7d": -1.61,
+    "mcap": 2022393011,
+    "vol": 379263628,
+    "turnover": 0.188
+   },
+   {
+    "sym": "KMNO",
+    "name": "Kamino",
+    "id": "kamino",
+    "rank": 167,
+    "price": 0.04109035,
+    "chg24h": 5.26,
+    "chg7d": 18.5,
+    "mcap": 237205566,
+    "vol": 30084511,
+    "turnover": 0.127
+   },
+   {
+    "sym": "AKT",
+    "name": "Akash Network",
+    "id": "akash-network",
+    "rank": 177,
+    "price": 0.727672,
+    "chg24h": 5.11,
+    "chg7d": -0.22,
+    "mcap": 216480864,
+    "vol": 8025529,
+    "turnover": 0.037
+   },
+   {
+    "sym": "BEAM",
+    "name": "Beam",
+    "id": "beam-2",
+    "rank": 216,
+    "price": 0.00297807,
+    "chg24h": 4.85,
+    "chg7d": 14.99,
+    "mcap": 152792544,
+    "vol": 16064402,
+    "turnover": 0.105
+   },
+   {
+    "sym": "META",
+    "name": "MetaDAO",
+    "id": "meta-2-2",
+    "rank": 246,
+    "price": 5.4,
+    "chg24h": 3.81,
+    "chg7d": -7.84,
+    "mcap": 122548282,
+    "vol": 3963332,
+    "turnover": 0.032
+   },
+   {
+    "sym": "BTW",
+    "name": "Bitway",
+    "id": "bitway",
+    "rank": 35,
+    "price": 2.07,
+    "chg24h": 3,
+    "chg7d": 29.67,
+    "mcap": 3112054179,
+    "vol": 56811108,
+    "turnover": 0.018
+   },
+   {
+    "sym": "H",
+    "name": "Humanity",
+    "id": "humanity",
+    "rank": 243,
+    "price": 0.058553,
+    "chg24h": 2.98,
+    "chg7d": -4.43,
+    "mcap": 124161876,
+    "vol": 1144955,
+    "turnover": 0.009
+   },
+   {
+    "sym": "SENT",
+    "name": "Sentient",
+    "id": "sentient",
+    "rank": 212,
+    "price": 0.02141019,
+    "chg24h": 2.91,
+    "chg7d": 5.62,
+    "mcap": 154950014,
+    "vol": 8776003,
+    "turnover": 0.057
+   },
+   {
+    "sym": "KITE",
+    "name": "Kite",
+    "id": "kite-2",
+    "rank": 147,
+    "price": 0.125778,
+    "chg24h": 2.85,
+    "chg7d": 0.89,
+    "mcap": 300728603,
+    "vol": 9216176,
+    "turnover": 0.031
+   },
+   {
+    "sym": "KCS",
+    "name": "KuCoin",
+    "id": "kucoin-shares",
+    "rank": 74,
+    "price": 7.6,
+    "chg24h": 2.54,
+    "chg7d": -0.14,
+    "mcap": 1061152976,
+    "vol": 46786579,
+    "turnover": 0.044
+   }
+  ],
+  "losers": [
+   {
+    "sym": "STRK",
+    "name": "Starknet",
+    "id": "starknet",
+    "rank": 111,
+    "price": 0.070647,
+    "chg24h": -14.34,
+    "chg7d": -0.96,
+    "mcap": 536384556,
+    "vol": 154941793,
+    "turnover": 0.289
+   },
+   {
+    "sym": "ZRO",
+    "name": "LayerZero",
+    "id": "layerzero",
+    "rank": 90,
+    "price": 1.97,
+    "chg24h": -13.28,
+    "chg7d": -0.51,
+    "mcap": 786659109,
+    "vol": 113368693,
+    "turnover": 0.144
+   },
+   {
+    "sym": "PYTH",
+    "name": "Pyth Network",
+    "id": "pyth-network",
+    "rank": 100,
+    "price": 0.084302,
+    "chg24h": -10.8,
+    "chg7d": 7.05,
+    "mcap": 663991351,
+    "vol": 61991152,
+    "turnover": 0.093
+   },
+   {
+    "sym": "ZK",
+    "name": "ZKsync",
+    "id": "zksync",
+    "rank": 199,
+    "price": 0.01619244,
+    "chg24h": -10.52,
+    "chg7d": 14.49,
+    "mcap": 175085296,
+    "vol": 29725180,
+    "turnover": 0.17
+   },
+   {
+    "sym": "CARDS",
+    "name": "Collector Crypt",
+    "id": "collector-crypt",
+    "rank": 154,
+    "price": 0.2964,
+    "chg24h": -9.62,
+    "chg7d": 5.36,
+    "mcap": 267586497,
+    "vol": 12646515,
+    "turnover": 0.047
+   },
+   {
+    "sym": "USELESS",
+    "name": "Useless Coin",
+    "id": "useless-3",
+    "rank": 209,
+    "price": 0.160346,
+    "chg24h": -8.8,
+    "chg7d": -10.66,
+    "mcap": 160357938,
+    "vol": 12710882,
+    "turnover": 0.079
+   },
+   {
+    "sym": "PRL",
+    "name": "Pearl",
+    "id": "pearl-2",
+    "rank": 106,
+    "price": 1.69,
+    "chg24h": -7.92,
+    "chg7d": 29.61,
+    "mcap": 588718902,
+    "vol": 5035050,
+    "turnover": 0.009
+   },
+   {
+    "sym": "RAIN",
+    "name": "Rain",
+    "id": "rain",
+    "rank": 20,
+    "price": 0.00891144,
+    "chg24h": -7.89,
+    "chg7d": -13.25,
+    "mcap": 6317598384,
+    "vol": 13160197,
+    "turnover": 0.002
+   },
+   {
+    "sym": "GRASS",
+    "name": "Grass",
+    "id": "grass",
+    "rank": 123,
+    "price": 0.632021,
+    "chg24h": -7.51,
+    "chg7d": -3.09,
+    "mcap": 442067352,
+    "vol": 24378267,
+    "turnover": 0.055
+   },
+   {
+    "sym": "FF",
+    "name": "Falcon Finance",
+    "id": "falcon-finance-ff",
+    "rank": 131,
+    "price": 0.106146,
+    "chg24h": -7.06,
+    "chg7d": -2.45,
+    "mcap": 354839833,
+    "vol": 6200729,
+    "turnover": 0.017
+   },
+   {
+    "sym": "DGAI",
+    "name": "DGrid AI",
+    "id": "dgrid-ai",
+    "rank": 245,
+    "price": 0.822235,
+    "chg24h": -6.65,
+    "chg7d": -15.17,
+    "mcap": 123339640,
+    "vol": 21396748,
+    "turnover": 0.173
+   },
+   {
+    "sym": "PONS",
+    "name": "Pons",
+    "id": "pons",
+    "rank": 178,
+    "price": 0.319325,
+    "chg24h": -6.59,
+    "chg7d": -7.91,
+    "mcap": 215541842,
+    "vol": 28904224,
+    "turnover": 0.134
+   },
+   {
+    "sym": "STX",
+    "name": "Stacks",
+    "id": "blockstack",
+    "rank": 94,
+    "price": 0.379844,
+    "chg24h": -6.15,
+    "chg7d": -5,
+    "mcap": 712834723,
+    "vol": 21463518,
+    "turnover": 0.03
+   },
+   {
+    "sym": "VVV",
+    "name": "Venice Token",
+    "id": "venice-token",
+    "rank": 71,
+    "price": 23.13,
+    "chg24h": -5.8,
+    "chg7d": 2.69,
+    "mcap": 1120888386,
+    "vol": 29787446,
+    "turnover": 0.027
+   },
+   {
+    "sym": "AERO",
+    "name": "Aerodrome Finance",
+    "id": "aerodrome-finance",
+    "rank": 84,
+    "price": 0.89178,
+    "chg24h": -5.52,
+    "chg7d": 8.24,
+    "mcap": 895499212,
+    "vol": 71646225,
+    "turnover": 0.08
+   }
+  ],
+  "weekGainers": [
+   {
+    "sym": "Q",
+    "name": "Quack AI",
+    "id": "quack-ai",
+    "rank": 134,
+    "price": 0.070992,
+    "chg24h": 31,
+    "chg7d": 142.54,
+    "mcap": 334305059,
+    "vol": 51981033,
+    "turnover": 0.155
+   },
+   {
+    "sym": "TIA",
+    "name": "Celestia",
+    "id": "celestia",
+    "rank": 92,
+    "price": 0.74963,
+    "chg24h": 14.36,
+    "chg7d": 54.22,
+    "mcap": 736097097,
+    "vol": 323910132,
+    "turnover": 0.44
+   },
+   {
+    "sym": "BAT",
+    "name": "Basic Attention",
+    "id": "basic-attention-token",
+    "rank": 148,
+    "price": 0.199004,
+    "chg24h": -0.68,
+    "chg7d": 44.61,
+    "mcap": 297504427,
+    "vol": 48809000,
+    "turnover": 0.164
+   },
+   {
+    "sym": "BTW",
+    "name": "Bitway",
+    "id": "bitway",
+    "rank": 35,
+    "price": 2.07,
+    "chg24h": 3,
+    "chg7d": 29.67,
+    "mcap": 3112054179,
+    "vol": 56811108,
+    "turnover": 0.018
+   },
+   {
+    "sym": "PRL",
+    "name": "Pearl",
+    "id": "pearl-2",
+    "rank": 106,
+    "price": 1.69,
+    "chg24h": -7.92,
+    "chg7d": 29.61,
+    "mcap": 588718902,
+    "vol": 5035050,
+    "turnover": 0.009
+   },
+   {
+    "sym": "INJ",
+    "name": "Injective",
+    "id": "injective-protocol",
+    "rank": 85,
+    "price": 8.91,
+    "chg24h": -3.77,
+    "chg7d": 26.16,
+    "mcap": 891366957,
+    "vol": 219504124,
+    "turnover": 0.246
+   },
+   {
+    "sym": "S",
+    "name": "Sonic",
+    "id": "sonic-3",
+    "rank": 174,
+    "price": 0.056322,
+    "chg24h": -1.63,
+    "chg7d": 25.5,
+    "mcap": 218846470,
+    "vol": 44998453,
+    "turnover": 0.206
+   },
+   {
+    "sym": "RSR",
+    "name": "Reserve Rights",
+    "id": "reserve-rights-token",
+    "rank": 244,
+    "price": 0.00197634,
+    "chg24h": 2.36,
+    "chg7d": 24.55,
+    "mcap": 123604310,
+    "vol": 14024000,
+    "turnover": 0.113
+   },
+   {
+    "sym": "SHFL",
+    "name": "Shuffle",
+    "id": "shuffle-2",
+    "rank": 162,
+    "price": 0.501465,
+    "chg24h": -2.87,
+    "chg7d": 24.42,
+    "mcap": 247002709,
+    "vol": 1547974,
+    "turnover": 0.006
+   },
+   {
+    "sym": "EIGEN",
+    "name": "EigenCloud (prev. EigenLayer)",
+    "id": "eigenlayer",
+    "rank": 157,
+    "price": 0.270355,
+    "chg24h": 8.18,
+    "chg7d": 22.65,
+    "mcap": 263378795,
+    "vol": 53146005,
+    "turnover": 0.202
+   },
+   {
+    "sym": "KMNO",
+    "name": "Kamino",
+    "id": "kamino",
+    "rank": 167,
+    "price": 0.04109035,
+    "chg24h": 5.26,
+    "chg7d": 18.5,
+    "mcap": 237205566,
+    "vol": 30084511,
+    "turnover": 0.127
+   },
+   {
+    "sym": "BEAM",
+    "name": "Beam",
+    "id": "beam-2",
+    "rank": 216,
+    "price": 0.00297807,
+    "chg24h": 4.85,
+    "chg7d": 14.99,
+    "mcap": 152792544,
+    "vol": 16064402,
+    "turnover": 0.105
+   },
+   {
+    "sym": "ZK",
+    "name": "ZKsync",
+    "id": "zksync",
+    "rank": 199,
+    "price": 0.01619244,
+    "chg24h": -10.52,
+    "chg7d": 14.49,
+    "mcap": 175085296,
+    "vol": 29725180,
+    "turnover": 0.17
+   },
+   {
+    "sym": "FLUID",
+    "name": "Fluid",
+    "id": "instadapp",
+    "rank": 189,
+    "price": 2.35,
+    "chg24h": 0.6,
+    "chg7d": 12.9,
+    "mcap": 196381887,
+    "vol": 4102146,
+    "turnover": 0.021
+   },
+   {
+    "sym": "AKE",
+    "name": "Akedo",
+    "id": "akedo",
+    "rank": 98,
+    "price": 0.03016306,
+    "chg24h": -0.32,
+    "chg7d": 8.8,
+    "mcap": 687966857,
+    "vol": 15999915,
+    "turnover": 0.023
+   }
+  ],
+  "turnoverTop": [
+   {
+    "sym": "SPCXB",
+    "name": "SpaceX (bStocks Tokenized Stock)",
+    "id": "spacex-bstocks-tokenized-stock",
+    "rank": 226,
+    "price": 145.83,
+    "chg24h": -4.3,
+    "chg7d": -10.52,
+    "mcap": 138320685,
+    "vol": 76632444,
+    "turnover": 0.554
+   },
+   {
+    "sym": "TIA",
+    "name": "Celestia",
+    "id": "celestia",
+    "rank": 92,
+    "price": 0.74963,
+    "chg24h": 14.36,
+    "chg7d": 54.22,
+    "mcap": 736097097,
+    "vol": 323910132,
+    "turnover": 0.44
+   },
+   {
+    "sym": "OP",
+    "name": "Optimism",
+    "id": "optimism",
+    "rank": 142,
+    "price": 0.137124,
+    "chg24h": -1.08,
+    "chg7d": -4.65,
+    "mcap": 315285482,
+    "vol": 104152349,
+    "turnover": 0.33
+   },
+   {
+    "sym": "STRK",
+    "name": "Starknet",
+    "id": "starknet",
+    "rank": 111,
+    "price": 0.070647,
+    "chg24h": -14.34,
+    "chg7d": -0.96,
+    "mcap": 536384556,
+    "vol": 154941793,
+    "turnover": 0.289
+   },
+   {
+    "sym": "PENGU",
+    "name": "Pudgy Penguins",
+    "id": "pudgy-penguins",
+    "rank": 119,
+    "price": 0.00758506,
+    "chg24h": -2.39,
+    "chg7d": -8.83,
+    "mcap": 476859578,
+    "vol": 132465934,
+    "turnover": 0.278
+   },
+   {
+    "sym": "INJ",
+    "name": "Injective",
+    "id": "injective-protocol",
+    "rank": 85,
+    "price": 8.91,
+    "chg24h": -3.77,
+    "chg7d": 26.16,
+    "mcap": 891366957,
+    "vol": 219504124,
+    "turnover": 0.246
+   },
+   {
+    "sym": "FET",
+    "name": "Artificial Superintelligence Alliance",
+    "id": "fetch-ai",
+    "rank": 121,
+    "price": 0.194287,
+    "chg24h": -5.19,
+    "chg7d": -11.06,
+    "mcap": 449199138,
+    "vol": 105758598,
+    "turnover": 0.235
+   },
+   {
+    "sym": "TRUMP",
+    "name": "Official Trump",
+    "id": "official-trump",
+    "rank": 113,
+    "price": 1.82,
+    "chg24h": -3.34,
+    "chg7d": -4.74,
+    "mcap": 511904873,
+    "vol": 119457022,
+    "turnover": 0.233
+   },
+   {
+    "sym": "SAND",
+    "name": "The Sandbox",
+    "id": "the-sandbox",
+    "rank": 202,
+    "price": 0.056439,
+    "chg24h": 0.51,
+    "chg7d": -17.89,
+    "mcap": 165777822,
+    "vol": 37990088,
+    "turnover": 0.229
+   },
+   {
+    "sym": "FIL",
+    "name": "Filecoin",
+    "id": "filecoin",
+    "rank": 80,
+    "price": 1.17,
+    "chg24h": 2.03,
+    "chg7d": 0.83,
+    "mcap": 979808279,
+    "vol": 203813834,
+    "turnover": 0.208
+   }
+  ],
+  "rotationIndex": {
+   "value": 162,
+   "ranks": [
+    134,
+    192,
+    92,
+    157,
+    89,
+    50,
+    167,
+    177,
+    216,
+    246
+   ],
+   "def": "24h 상승 상위 10종의 시총 순위 중앙값. 100 이내 = 대형주, 300 이상 = 꼬리까지 확산"
+  },
+  "breadth": {
+   "up": 44,
+   "down": 144
+  }
+ },
+ "ranks": {
+  "BTC:bitcoin": 1,
+  "ETH:ethereum": 2,
+  "USDT:tether": 3,
+  "BNB:binancecoin": 4,
+  "XRP:ripple": 5,
+  "USDC:usd-coin": 6,
+  "SOL:solana": 7,
+  "TRX:tron": 8,
+  "FIGR_HELOC:figure-heloc": 9,
+  "ZEC:zcash": 10,
+  "HYPE:hyperliquid": 11,
+  "DOGE:dogecoin": 12,
+  "XMR:monero": 13,
+  "USDS:usds": 14,
+  "WBT:whitebit": 15,
+  "LINK:chainlink": 16,
+  "ADA:cardano": 17,
+  "LEO:leo-token": 18,
+  "NEAR:near": 19,
+  "XLM:stellar": 21,
+  "RAIN:rain": 20,
+  "BCH:bitcoin-cash": 22,
+  "USDE:ethena-usde": 23,
+  "LTC:litecoin": 24,
+  "UNI:uniswap": 25,
+  "DAI:dai": 26,
+  "AVAX:avalanche-2": 27,
+  "SUI:sui": 28,
+  "CC:canton-network": 29,
+  "USD1:usd1-wlfi": 30,
+  "GRAM:the-open-network": 31,
+  "HBAR:hedera-hashgraph": 32,
+  "XAUT:tether-gold": 33,
+  "TAO:bittensor": 34,
+  "BTW:bitway": 35,
+  "USDG:global-dollar": 36,
+  "SHIB:shiba-inu": 37,
+  "QNT:quant-network": 38,
+  "CRO:crypto-com-chain": 39,
+  "PYUSD:paypal-usd": 40,
+  "ENA:ethena": 41,
+  "OKB:okb": 42,
+  "RLUSD:ripple-usd": 43,
+  "AAVE:aave": 44,
+  "USYC:hashnote-usyc": 45,
+  "USDY:ondo-us-dollar-yield": 46,
+  "ONDO:ondo-finance": 47,
+  "BUIDL:blackrock-usd-institutional-digital-liquidity-fund": 48,
+  "PUMP:pump-fun": 49,
+  "WLD:worldcoin-wld": 50,
+  "DOT:polkadot": 51,
+  "ASTER:aster-2": 52,
+  "USDF:falcon-finance": 53,
+  "PAXG:pax-gold": 54,
+  "WLFI:world-liberty-financial": 55,
+  "M:memecore": 56,
+  "USDD:usdd": 57,
+  "MNT:mantle": 58,
+  "EURSAFO:spiko-amundi-overnight-swap-fund-eur": 59,
+  "PEPE:pepe": 60,
+  "ICP:internet-computer": 61,
+  "MORPHO:morpho": 62,
+  "SKY:sky": 63,
+  "U:united-stables": 64,
+  "HTX:htx-dao": 65,
+  "BGB:bitget-token": 66,
+  "BFUSD:bfusd": 67,
+  "ARB:arbitrum": 68,
+  "USDGO:usdgo": 69,
+  "ETC:ethereum-classic": 70,
+  "VVV:venice-token": 71,
+  "JST:just": 72,
+  "GT:gatechain-token": 73,
+  "KCS:kucoin-shares": 74,
+  "ALGO:algorand": 75,
+  "JUP:jupiter-exchange-solana": 76,
+  "POL:polygon-ecosystem-token": 77,
+  "RENDER:render-token": 78,
+  "KAS:kaspa": 79,
+  "FIL:filecoin": 80,
+  "BCAP:blockchain-capital": 81,
+  "ATOM:cosmos": 82,
+  "PI:pi-network": 83,
+  "AERO:aerodrome-finance": 84,
+  "INJ:injective-protocol": 85,
+  "OUSD:open-usd": 86,
+  "NEXO:nexo": 87,
+  "USTB:superstate-short-duration-us-government-securities-fund-ustb": 88,
+  "LIT:lighter": 89,
+  "ZRO:layerzero": 90,
+  "APT:aptos": 91,
+  "TIA:celestia": 92,
+  "NIGHT:midnight-3": 93,
+  "STX:blockstack": 94,
+  "STABLE:stable-2": 95,
+  "GHO:gho": 96,
+  "CAKE:pancakeswap-token": 97,
+  "AKE:akedo": 98,
+  "XDC:xdce-crowd-sale": 99,
+  "PYTH:pyth-network": 100,
+  "ETHFI:ether-fi": 101,
+  "EUTBL:eutbl": 102,
+  "DASH:dash": 103,
+  "BDX:beldex": 104,
+  "VET:vechain": 105,
+  "PRL:pearl-2": 106,
+  "JAAA:janus-henderson-anemoy-aaa-clo-fund": 107,
+  "FLR:flare-networks": 108,
+  "CRV:curve-dao-token": 109,
+  "USD0:usual-usd": 110,
+  "STRK:starknet": 111,
+  "KAU:kinesis-gold": 112,
+  "TRUMP:official-trump": 113,
+  "YLDS:ylds": 114,
+  "EURC:euro-coin": 115,
+  "RAY:raydium": 116,
+  "TUSD:true-usd": 117,
+  "币安人生:bianrensheng": 118,
+  "PENGU:pudgy-penguins": 119,
+  "A7A5:a7a5": 120,
+  "FET:fetch-ai": 121,
+  "VIRTUAL:virtual-protocol": 122,
+  "GRASS:grass": 123,
+  "SEI:sei-network": 124,
+  "DRV:derive": 125,
+  "HASH:hash-2": 126,
+  "XPL:plasma": 127,
+  "BSV:bitcoin-cash-sv": 128,
+  "PENDLE:pendle": 129,
+  "SOFID:sofiusd": 130,
+  "FF:falcon-finance-ff": 131,
+  "XTZ:tezos": 132,
+  "BTT:bittorrent": 133,
+  "Q:quack-ai": 134,
+  "REUSD:re-protocol-reusd": 135,
+  "LDO:lido-dao": 136,
+  "SPX:spx6900": 137,
+  "JTRSY:janus-henderson-anemoy-treasury-fund": 138,
+  "OUSG:ousg": 139,
+  "SUN:sun-token": 140,
+  "OP:optimism": 142,
+  "FDUSD:first-digital-usd": 141,
+  "PIEVERSE:pieverse": 143,
+  "UB:unibase": 144,
+  "APXUSD:apxusd": 145,
+  "GNO:gnosis": 146,
+  "KITE:kite-2": 147,
+  "BAT:basic-attention-token": 148,
+  "OHM:olympus": 149,
+  "CFX:conflux-token": 150,
+  "KAIA:kaia": 151,
+  "GRT:the-graph": 152,
+  "MON:monad": 153,
+  "BONK:bonk": 155,
+  "LUNC:terra-luna": 156,
+  "CARDS:collector-crypt": 154,
+  "EIGEN:eigenlayer": 157,
+  "DCR:decred": 158,
+  "USDAI:usdai": 159,
+  "AR:arweave": 160,
+  "JTO:jito-governance-token": 161,
+  "SHFL:shuffle-2": 162,
+  "APEPE:ape-and-pepe": 163,
+  "BP:backpack": 164,
+  "SYRUP:syrup": 165,
+  "ENS:ethereum-name-service": 166,
+  "KMNO:kamino": 167,
+  "SAFO:safo": 168,
+  "NFT:apenft": 169,
+  "FLOKI:floki": 170,
+  "JASMY:jasmycoin": 171,
+  "IOTA:iota": 172,
+  "COMP:compound-governance-token": 173,
+  "S:sonic-3": 174,
+  "FRAX:frax": 175,
+  "ZBCN:zebec-network": 176,
+  "AKT:akash-network": 177,
+  "PONS:pons": 178,
+  "KAG:kinesis-silver": 179,
+  "KOGE:bnb48-club-token": 180,
+  "CRVUSD:crvusd": 181,
+  "RUNE:thorchain": 182,
+  "USX:usx": 183,
+  "MET:meteora": 184,
+  "PC0000031:tradable-na-rent-financing-platform-sstn": 185,
+  "TWT:trust-wallet-token": 186,
+  "WIF:dogwifcoin": 187,
+  "THETA:theta-token": 188,
+  "FLUID:instadapp": 189,
+  "EURCV:societe-generale-forge-eurcv": 190,
+  "A:vaulta": 192,
+  "ZAMA:zama": 191,
+  "AXS:axie-infinity": 193,
+  "AUSD:agora-dollar": 194,
+  "USAT:usa": 195,
+  "CVX:convex-finance": 196,
+  "TRAC:origintrail": 197,
+  "MX:mx-token": 198,
+  "ZK:zksync": 199,
+  "MANA:decentraland": 200,
+  "2Z:doublezero": 201,
+  "SAND:the-sandbox": 202,
+  "BORG:swissborg": 205,
+  "NEO:neo": 203,
+  "USTBL:spiko-us-t-bills-money-market-fund": 204,
+  "XCN:chain-2": 206,
+  "BTSE:btse-token": 207,
+  "VSN:vision-3": 208,
+  "USELESS:useless-3": 209,
+  "APYUSD:apyusd": 210,
+  "NPC:non-playable-coin": 211,
+  "SENT:sentient": 212,
+  "STRCX:strategy-pp-variable-xstock": 213,
+  "COCO:coco-2": 215,
+  "FARTCOIN:fartcoin": 214,
+  "BEAM:beam-2": 216,
+  "RAIL:railgun": 218,
+  "CHZ:chiliz": 217,
+  "GOMINING:gmt-token": 219,
+  "GUSD:gusd": 220,
+  "APE:apecoin": 221,
+  "CRCLB:circle-internet-group-bstock": 222,
+  "SN51:celium": 223,
+  "0G:zero-gravity": 224,
+  "IMX:immutable-x": 225,
+  "SPCXB:spacex-bstocks-tokenized-stock": 226,
+  "B:build-on": 227,
+  "JPYC:jpycoin": 228,
+  "AIOZ:aioz-network": 229,
+  "XEC:ecash": 230,
+  "ULTIMA:ultima": 231,
+  "1INCH:1inch": 232,
+  "SUPER:superfarm": 233,
+  "SNX:havven": 234,
+  "ANVL:anvil": 235,
+  "JPYSC:jpysc": 236,
+  "ONYC:onyc": 237,
+  "CASH:cash-4": 238,
+  "SFP:safepal": 239,
+  "PLUME:plume": 241,
+  "OZO:ozone-chain": 240,
+  "H:humanity": 243,
+  "HBD:hive_dollar": 242,
+  "RSR:reserve-rights-token": 244,
+  "DGAI:dgrid-ai": 245,
+  "META:meta-2-2": 246,
+  "AWE:stp-network": 247,
+  "NOPAL:nest-blackopal-liquidstone-ii-vault": 248,
+  "BC:bc-token": 249,
+  "AVUSD:avant-usd": 250
+ },
+ "deriv": {
+  "source": "Hyperliquid metaAndAssetCtxs (거래소 하나의 값. 시장 전체 롱숏·청산은 아니다)",
+  "rows": [
+   {
+    "coin": "BTC",
+    "mark": 81568,
+    "fundingHourly": 0.0000125,
+    "fundingAnnual": 10.95,
+    "oiUSD": 3352073781,
+    "vol24hUSD": 2713794315,
+    "premium": -0.0003553922,
+    "prevDayPx": 82128
+   },
+   {
+    "coin": "ETH",
+    "mark": 2431.1,
+    "fundingHourly": 0.0000020185,
+    "fundingAnnual": 1.77,
+    "oiUSD": 2613405465,
+    "vol24hUSD": 917824745,
+    "premium": -0.0003741315,
+    "prevDayPx": 2446.6
+   },
+   {
+    "coin": "SOL",
+    "mark": 104.83,
+    "fundingHourly": 0.0000019547,
+    "fundingAnnual": 1.71,
+    "oiUSD": 569054578,
+    "vol24hUSD": 294597525,
+    "premium": -0.0003336988,
+    "prevDayPx": 106.25
+   },
+   {
+    "coin": "DOGE",
+    "mark": 0.080579,
+    "fundingHourly": 0.0000125,
+    "fundingAnnual": 10.95,
+    "oiUSD": 98988244,
+    "vol24hUSD": 4374985,
+    "premium": -0.000210905,
+    "prevDayPx": 0.082395
+   },
+   {
+    "coin": "XRP",
+    "mark": 1.308734,
+    "fundingHourly": 0.0000114217,
+    "fundingAnnual": 10.01,
+    "oiUSD": 232418027,
+    "vol24hUSD": 58467792,
+    "premium": -0.0002673286,
+    "prevDayPx": 1.3419
+   },
+   {
+    "coin": "HYPE",
+    "mark": 79.724,
+    "fundingHourly": 0.0000054271,
+    "fundingAnnual": 4.75,
+    "oiUSD": 1584328474,
+    "vol24hUSD": 279947483,
+    "premium": -0.0002996151,
+    "prevDayPx": 81.127
+   },
+   {
+    "coin": "ZEC",
+    "mark": 1165.2,
+    "fundingHourly": 0.0000125,
+    "fundingAnnual": 10.95,
+    "oiUSD": 542486825,
+    "vol24hUSD": 254511560,
+    "premium": 0.0002574665,
+    "prevDayPx": 1232.6
+   },
+   {
+    "coin": "XMR",
+    "mark": 559.76,
+    "fundingHourly": 0.0000338959,
+    "fundingAnnual": 29.69,
+    "oiUSD": 65238469,
+    "vol24hUSD": 20793880,
+    "premium": 0.0006276835,
+    "prevDayPx": 559.64
+   }
+  ]
+ },
+ "charts": {
+  "BTC": {
+   "file": "data/charts/BTC.svg",
+   "bytes": 58003
+  },
+  "ETH": {
+   "file": "data/charts/ETH.svg",
+   "bytes": 57793
+  }
+ }
+}
