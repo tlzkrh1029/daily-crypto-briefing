@@ -1,0 +1,11 @@
+{
+  "name": "daily-crypto-briefing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node scripts/collect.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
