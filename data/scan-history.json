@@ -14,5 +14,21 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:MINAUSD"
+ },
+ {
+  "date": "2026-10-18",
+  "sym": "KAVA",
+  "dist0": 1.1,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:KAVAUSD"
+ },
+ {
+  "date": "2026-10-18",
+  "sym": "MINA",
+  "dist0": 3.56,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:MINAUSD"
  }
 ]
