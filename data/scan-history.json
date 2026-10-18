@@ -30,5 +30,21 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:MINAUSD"
+ },
+ {
+  "date": "2026-10-19",
+  "sym": "VTHO",
+  "dist0": 1.54,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:VTHOUSD"
+ },
+ {
+  "date": "2026-10-19",
+  "sym": "ACX",
+  "dist0": 1.94,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ACXUSD"
  }
 ]
