@@ -2,16 +2,24 @@ name: Collect briefing data
 
 # Collects the numbers for the daily crypto briefing and commits data/latest.json.
 # The Claude cloud scheduled tasks (06:10 and 08:35 KST) clone this repo and read that file;
+# data/charts/ holds BTC.svg, ETH.svg (120-day candles) and CPTRA.svg (BTC %ex 5/50/200 SMA).
 # they cannot reach TradingView, Yahoo, CoinGecko, Upbit or Bithumb themselves.
 # TradingView is read with the anonymous chart token (no login cookies).
-# GitHub cron can start late, so the follow-up slot runs twice; the later run overwrites the earlier one.
+# GitHub cron starts 1.5-3.5 hours late on this repo (measured 2026-10-18..21), so the runs are scheduled
+# early and the slot is chosen by the time the run actually starts (scripts/collect.mjs):
+#   06:00-08:59 KST = follow-up, any other time = morning (after the 09:00 close: the next day's morning).
+# Each later run of the same slot overwrites the earlier one.
 # GitHub disables a public repo's schedule after 60 days without activity; the data commits are that
 # activity. Never add keepalive commits.
 on:
   schedule:
-    - cron: '7 20 * * *'    # 05:07 KST  morning
-    - cron: '47 22 * * *'   # 07:47 KST  follow-up (1st)
-    - cron: '17 23 * * *'   # 08:17 KST  follow-up (2nd)
+    - cron: '7 15 * * *'    # 00:07 KST  morning (fallback)
+    - cron: '7 17 * * *'    # 02:07 KST  morning
+    - cron: '37 18 * * *'   # 03:37 KST  morning
+    - cron: '7 19 * * *'    # 04:07 KST  morning, or follow-up when it starts after 06:00
+    - cron: '37 19 * * *'   # 04:37 KST  follow-up when late (the usual case)
+    - cron: '17 20 * * *'   # 05:17 KST  follow-up
+    - cron: '57 20 * * *'   # 05:57 KST  follow-up
   workflow_dispatch:
     inputs:
       slot:

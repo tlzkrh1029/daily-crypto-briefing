@@ -3,7 +3,8 @@
 // scheduled tasks, which cannot reach these sites themselves.
 //
 // Env:
-//   SLOT        morning | followup (default: by KST hour, before 07:30 = morning)
+//   SLOT        morning | followup (default: by KST time, 06:00-08:59 = followup, otherwise morning;
+//               a run after the 09:00 daily close counts as the next day's morning)
 //   LOCAL_DIR   test mode: read {id,d0,c} daily-close files (wma0.3-screenshot data/daily format)
 //               instead of TradingView, and skip HTTP sources
 //   SKIP        comma list of sections to skip (ledger,snapshot,ma,top10,cptra,igv,movers,deriv,scan,sectors,charts)
@@ -11,18 +12,20 @@ import { mkdir, readFile, writeFile, appendFile } from 'node:fs/promises';
 import path from 'node:path';
 import { createTV } from './lib/tv.mjs';
 import { report, ratio, sum, splitClosed, scan365, median, r2, iso, sma, DAY } from './lib/ind.mjs';
-import { chartSVG } from './lib/chart.mjs';
+import { chartSVG, cptraSVG } from './lib/chart.mjs';
 
 const OUT = process.env.OUT_DIR || 'data';
 const LOCAL = process.env.LOCAL_DIR || null;
 const SKIP = new Set((process.env.SKIP || '').split(',').map((s) => s.trim()).filter(Boolean));
 const NOW = Date.now();
 const kstHour = new Date(NOW + 9 * 3600e3).getUTCHours() + new Date(NOW + 9 * 3600e3).getUTCMinutes() / 60;
-const SLOT = process.env.SLOT || (kstHour < 7.5 || kstHour >= 20 ? 'morning' : 'followup');
+const SLOT = process.env.SLOT || (kstHour >= 6 && kstHour < 9 ? 'followup' : 'morning');
+// the 06:10 brief this run feeds: after the 09:00 KST close it is tomorrow's
+const BRIEF_DATE = new Date(NOW + 9 * 3600e3 + (kstHour >= 9 ? DAY * 1000 : 0)).toISOString().slice(0, 10);
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36';
 
 const out = {
-  meta: { generatedAt: new Date(NOW).toISOString(), generatedKST: new Date(NOW + 9 * 3600e3).toISOString().replace('T', ' ').slice(0, 16), slot: SLOT, local: !!LOCAL, sections: {}, failures: [] },
+  meta: { generatedAt: new Date(NOW).toISOString(), generatedKST: new Date(NOW + 9 * 3600e3).toISOString().replace('T', ' ').slice(0, 16), slot: SLOT, briefDate: BRIEF_DATE, local: !!LOCAL, sections: {}, failures: [] },
 };
 const fail = (section, what, err) => { out.meta.failures.push({ section, what, error: String(err?.message || err).slice(0, 200) }); };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -201,6 +204,8 @@ await section('top10', async () => {
 });
 
 // ---------------- 5. cptra (miner revenue USD / tx count) ----------------
+// same calculation as tlzkrh1029/pinescript cost-per-transaction/btc_cost_per_transaction.pine ("BTC %ex")
+let cptraP = null;
 await section('cptra', async () => {
   const rv = await getSeries('COINMETRICS:BTC_MINERREVENUEUSD', { count: 1500 });
   const tx = await getSeries('COINMETRICS:BTC_TXCOUNT', { count: 1500 });
@@ -217,6 +222,7 @@ await section('cptra', async () => {
     if ((s50[k] > s200[k]) !== (s50[k - 1] > s200[k - 1])) { crossDate = iso(t[k]); crossDir = s50[k] > s200[k] ? 'up' : 'down'; break; }
   }
   const last365 = v.slice(-365);
+  cptraP = { t: t.map((x) => x), s5, s50, s200, lastCross: crossDate && { date: crossDate, dir: crossDir } };
   out.cptra = {
     date: iso(t[i]), value: r2(v[i]), norm: r2(norm[i], 3), sma5: r2(s5[i], 3), sma50: r2(s50[i], 3), sma200: r2(s200[i], 3),
     sma50AboveSma200: s50[i] > s200[i], lastCross: crossDate && { date: crossDate, dir: crossDir },
@@ -406,12 +412,13 @@ await section('scan', async () => {
   const fresh = ev.filter((r) => r.age === 1 && r.dist > 0 && r.dist <= 15).sort((a, b) => a.dist - b.dist);
   const near = ev.filter((r) => r.age >= 2 && r.age <= 4).sort((a, b) => a.age - b.age || a.dist - b.dist);
   const byLive = [...ev].sort((a, b) => dl(b) - dl(a));
-  const prevShare = prev?.scan?.shareAbove ?? null;
+  // previous brief's share: an earlier run for the same brief date keeps its own 'previous'
+  const prevShare = prev?.meta?.briefDate === BRIEF_DATE ? (prev?.scan?.shareAbovePrev ?? null) : (prev?.scan?.shareAbove ?? null);
   const shareAbove = ev.length ? r2((ev.filter((r) => r.age > 0).length / ev.length) * 100, 1) : null;
   // tracking: candidates from earlier mornings (data/scan-history.json)
   const histFile = path.join(OUT, 'scan-history.json');
   const hist = (await readJSON(histFile)) || [];
-  const today = new Date(NOW + 9 * 3600e3).toISOString().slice(0, 10);
+  const today = BRIEF_DATE;
   const bySym = new Map(rows.map((r) => [r.sym, r]));
   const tracked = hist.filter((h) => (NOW - Date.parse(h.date)) / 86400e3 <= 30 && h.date !== today).map((h) => {
     const r = bySym.get(h.sym);
@@ -512,11 +519,18 @@ await section('charts', async () => {
   for (const [name, sym] of [['BTC', 'BITSTAMP:BTCUSD'], ['ETH', 'BITSTAMP:ETHUSD']]) {
     const s = series[sym];
     if (!s) { fail('charts', sym, 'series missing'); continue; }
-    const svg = chartSVG(s, { window: 180, title: `${name}USD · 1D · 180일` });
+    const svg = chartSVG(s, { window: 120, title: `${name}USD · 1D · 120일` });
     if (!svg) continue;
     const f = path.join(OUT, 'charts', `${name}.svg`);
     await writeFile(f, svg);
     out.charts[name] = { file: f, bytes: svg.length };
+  }
+  if (!cptraP) { fail('charts', 'CPTRA', 'cptra series missing'); return; }
+  const svg = cptraSVG(cptraP, { window: 240, lastCross: cptraP.lastCross, now: NOW });
+  if (svg) {
+    const f = path.join(OUT, 'charts', 'CPTRA.svg');
+    await writeFile(f, svg);
+    out.charts.CPTRA = { file: f, bytes: svg.length };
   }
 });
 
@@ -527,16 +541,20 @@ delete out._scanMembers;
 await mkdir(OUT, { recursive: true });
 await writeFile(path.join(OUT, 'latest.json'), JSON.stringify(out, null, 1));
 await writeFile(path.join(OUT, `latest-${SLOT}.json`), JSON.stringify(out, null, 1));
-// one-line log of key values (append once per KST date and slot)
+// one-line log of key values: one row per brief date and slot, the latest run replaces the earlier one
 try {
   const logF = path.join(OUT, 'log.csv');
   const prevLog = await readFile(logF, 'utf8').catch(() => '');
-  const date = new Date(NOW + 9 * 3600e3).toISOString().slice(0, 10);
+  const date = BRIEF_DATE;
   if (!prevLog) await writeFile(logF, 'kst_date,slot,generated_utc,btc_d,usdt_d,usdc_d,stable_d,stable_1m_pp,others_d,others_d_1m_pp,btc_close,btc_sma50_dist,btc_1m_pct,scan_share_above,cptra_norm\n');
-  if (!prevLog.includes(`\n${date},${SLOT},`)) {
+  {
     const L = out.ledger || {}, b = out.ma?.BTC || {};
     const row = [date, SLOT, out.meta.generatedAt, L['BTC.D']?.close, L['USDT.D']?.close, L['USDC.D']?.close, r2(L['ΣSTABLECOIN.D']?.close, 3), L['ΣSTABLECOIN.D']?.chg30d, L['OTHERS.D']?.close, L['OTHERS.D']?.chg30d, b.close, b.sma50?.dist, b.chg30d, out.scan?.shareAbove, out.cptra?.norm];
-    await appendFile(logF, row.map((v) => (v == null ? '' : v)).join(',') + '\n');
+    const line = row.map((v) => (v == null ? '' : v)).join(',');
+    const rows = (await readFile(logF, 'utf8')).split('\n').filter(Boolean);
+    const k = rows.findIndex((r) => r.startsWith(`${date},${SLOT},`));
+    if (k > 0) rows[k] = line; else rows.push(line);
+    await writeFile(logF, rows.join('\n') + '\n');
   }
 } catch (e) { console.error('log', e); }
 console.log(`done: slot=${SLOT} failures=${out.meta.failures.length}`);
