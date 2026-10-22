@@ -46,5 +46,21 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:ACXUSD"
+ },
+ {
+  "date": "2026-10-23",
+  "sym": "METIS",
+  "dist0": 0.18,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:METISUSD"
+ },
+ {
+  "date": "2026-10-23",
+  "sym": "MINA",
+  "dist0": 0.65,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:MINAUSD"
  }
 ]
