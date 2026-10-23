@@ -62,5 +62,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:MINAUSD"
+ },
+ {
+  "date": "2026-10-24",
+  "sym": "ACX",
+  "dist0": 5.66,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ACXUSD"
  }
 ]
