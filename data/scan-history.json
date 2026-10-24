@@ -70,5 +70,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:ACXUSD"
+ },
+ {
+  "date": "2026-10-25",
+  "sym": "CPOOL",
+  "dist0": 0.38,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:CPOOLUSD"
  }
 ]
