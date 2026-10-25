@@ -78,5 +78,29 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:CPOOLUSD"
+ },
+ {
+  "date": "2026-10-26",
+  "sym": "GPS",
+  "dist0": 0.05,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:GPSUSD"
+ },
+ {
+  "date": "2026-10-26",
+  "sym": "REZ",
+  "dist0": 0.6,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:REZUSD"
+ },
+ {
+  "date": "2026-10-26",
+  "sym": "EDEN",
+  "dist0": 3.24,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:EDENOUSD"
  }
 ]
