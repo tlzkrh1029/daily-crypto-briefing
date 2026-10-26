@@ -102,5 +102,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:EDENOUSD"
+ },
+ {
+  "date": "2026-10-27",
+  "sym": "OSMO",
+  "dist0": 7.95,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:OSMOUSD"
  }
 ]
