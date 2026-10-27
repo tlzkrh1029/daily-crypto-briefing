@@ -110,5 +110,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:OSMOUSD"
+ },
+ {
+  "date": "2026-10-28",
+  "sym": "COMP",
+  "dist0": 1.19,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:COMPUSD"
  }
 ]
