@@ -118,5 +118,29 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:COMPUSD"
+ },
+ {
+  "date": "2026-10-29",
+  "sym": "SOL",
+  "dist0": 0.04,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:SOLUSD"
+ },
+ {
+  "date": "2026-10-29",
+  "sym": "PLUME",
+  "dist0": 0.1,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:PLUMEUSD"
+ },
+ {
+  "date": "2026-10-29",
+  "sym": "TAO",
+  "dist0": 0.82,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:TAOBUSD"
  }
 ]
