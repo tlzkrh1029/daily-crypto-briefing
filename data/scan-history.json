@@ -142,5 +142,21 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:TAOBUSD"
+ },
+ {
+  "date": "2026-10-30",
+  "sym": "CPOOL",
+  "dist0": 1.84,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:CPOOLUSD"
+ },
+ {
+  "date": "2026-10-30",
+  "sym": "SOMI",
+  "dist0": 5.09,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:SOMIUSD"
  }
 ]
