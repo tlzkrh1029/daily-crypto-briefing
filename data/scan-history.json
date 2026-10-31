@@ -158,5 +158,61 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:SOMIUSD"
+ },
+ {
+  "date": "2026-11-01",
+  "sym": "SOMI",
+  "dist0": 2.2,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:SOMIUSD"
+ },
+ {
+  "date": "2026-11-01",
+  "sym": "ACX",
+  "dist0": 2.45,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ACXUSD"
+ },
+ {
+  "date": "2026-11-01",
+  "sym": "AAVE",
+  "dist0": 2.55,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:AAVEUSD"
+ },
+ {
+  "date": "2026-11-01",
+  "sym": "BAT",
+  "dist0": 2.72,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:BATUSD"
+ },
+ {
+  "date": "2026-11-01",
+  "sym": "EDEN",
+  "dist0": 4.93,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:EDENOUSD"
+ },
+ {
+  "date": "2026-11-01",
+  "sym": "PENDLE",
+  "dist0": 5.13,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:PENDLEUSD"
+ },
+ {
+  "date": "2026-11-01",
+  "sym": "LINK",
+  "dist0": 7.35,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:LINKUSD"
  }
 ]
