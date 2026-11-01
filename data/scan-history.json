@@ -214,5 +214,45 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:LINKUSD"
+ },
+ {
+  "date": "2026-11-02",
+  "sym": "OGN",
+  "dist0": 0.36,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:OGNUSD"
+ },
+ {
+  "date": "2026-11-02",
+  "sym": "BTC",
+  "dist0": 0.45,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:BTCUSD"
+ },
+ {
+  "date": "2026-11-02",
+  "sym": "RLC",
+  "dist0": 0.82,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:RLCUSD"
+ },
+ {
+  "date": "2026-11-02",
+  "sym": "REZ",
+  "dist0": 1.66,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:REZUSD"
+ },
+ {
+  "date": "2026-11-02",
+  "sym": "C",
+  "dist0": 2.68,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:CHUSD"
  }
 ]
