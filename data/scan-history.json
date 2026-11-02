@@ -254,5 +254,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:CHUSD"
+ },
+ {
+  "date": "2026-11-03",
+  "sym": "BNB",
+  "dist0": 0.26,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:BNBUSD"
  }
 ]
