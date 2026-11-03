@@ -262,5 +262,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:BNBUSD"
+ },
+ {
+  "date": "2026-11-04",
+  "sym": "TRX",
+  "dist0": 1.29,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:TRXUSD"
  }
 ]
