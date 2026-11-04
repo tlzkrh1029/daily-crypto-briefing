@@ -270,5 +270,45 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:TRXUSD"
+ },
+ {
+  "date": "2026-11-05",
+  "sym": "SKY",
+  "dist0": 0.09,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:SKY2USD"
+ },
+ {
+  "date": "2026-11-05",
+  "sym": "BTC",
+  "dist0": 0.62,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:BTCUSD"
+ },
+ {
+  "date": "2026-11-05",
+  "sym": "BAT",
+  "dist0": 1.88,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:BATUSD"
+ },
+ {
+  "date": "2026-11-05",
+  "sym": "KMNO",
+  "dist0": 4.62,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:KMNOUSD"
+ },
+ {
+  "date": "2026-11-05",
+  "sym": "FLUID",
+  "dist0": 5.16,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:FLUID3USD"
  }
 ]
