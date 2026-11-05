@@ -310,5 +310,53 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:FLUID3USD"
+ },
+ {
+  "date": "2026-11-06",
+  "sym": "MEV",
+  "dist0": 0.77,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:MEVUSD"
+ },
+ {
+  "date": "2026-11-06",
+  "sym": "CPOOL",
+  "dist0": 1.44,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:CPOOLUSD"
+ },
+ {
+  "date": "2026-11-06",
+  "sym": "BNB",
+  "dist0": 1.62,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:BNBUSD"
+ },
+ {
+  "date": "2026-11-06",
+  "sym": "FF",
+  "dist0": 2.31,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:FFUSD"
+ },
+ {
+  "date": "2026-11-06",
+  "sym": "ETH",
+  "dist0": 2.45,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ETHUSD"
+ },
+ {
+  "date": "2026-11-06",
+  "sym": "TIA",
+  "dist0": 4.63,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:TIA2USD"
  }
 ]
