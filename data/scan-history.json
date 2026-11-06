@@ -358,5 +358,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:TIA2USD"
+ },
+ {
+  "date": "2026-11-07",
+  "sym": "ACX",
+  "dist0": 4.74,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ACXUSD"
  }
 ]
