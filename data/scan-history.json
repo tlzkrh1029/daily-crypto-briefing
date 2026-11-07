@@ -366,5 +366,53 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:ACXUSD"
+ },
+ {
+  "date": "2026-11-08",
+  "sym": "ONDO",
+  "dist0": 0.63,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ONDOUSD"
+ },
+ {
+  "date": "2026-11-08",
+  "sym": "TIA",
+  "dist0": 0.75,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:TIA2USD"
+ },
+ {
+  "date": "2026-11-08",
+  "sym": "PHA",
+  "dist0": 1.33,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:PHAUSD"
+ },
+ {
+  "date": "2026-11-08",
+  "sym": "NIL",
+  "dist0": 1.35,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:NILUSD"
+ },
+ {
+  "date": "2026-11-08",
+  "sym": "ETHFI",
+  "dist0": 4.55,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ETHFIUSD"
+ },
+ {
+  "date": "2026-11-08",
+  "sym": "C",
+  "dist0": 5.48,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:CHUSD"
  }
 ]
