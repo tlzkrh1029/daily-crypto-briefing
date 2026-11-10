@@ -422,5 +422,45 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:NMRUSD"
+ },
+ {
+  "date": "2026-11-11",
+  "sym": "TIA",
+  "dist0": 0.68,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:TIA2USD"
+ },
+ {
+  "date": "2026-11-11",
+  "sym": "LINK",
+  "dist0": 1.32,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:LINKUSD"
+ },
+ {
+  "date": "2026-11-11",
+  "sym": "ONDO",
+  "dist0": 2.26,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ONDOUSD"
+ },
+ {
+  "date": "2026-11-11",
+  "sym": "ENA",
+  "dist0": 2.77,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ENAUSD"
+ },
+ {
+  "date": "2026-11-11",
+  "sym": "BAT",
+  "dist0": 4,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:BATUSD"
  }
 ]
