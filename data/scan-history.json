@@ -462,5 +462,21 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:BATUSD"
+ },
+ {
+  "date": "2026-11-14",
+  "sym": "AVA",
+  "dist0": 2.86,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:AVAUSD"
+ },
+ {
+  "date": "2026-11-14",
+  "sym": "TIA",
+  "dist0": 3.88,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:TIA2USD"
  }
 ]
