@@ -478,5 +478,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:TIA2USD"
+ },
+ {
+  "date": "2026-11-15",
+  "sym": "FF",
+  "dist0": 1.23,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:FFUSD"
  }
 ]
