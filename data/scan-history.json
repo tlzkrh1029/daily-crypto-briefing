@@ -486,5 +486,37 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:FFUSD"
+ },
+ {
+  "date": "2026-11-17",
+  "sym": "KITE",
+  "dist0": 0.77,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:KITEUSD"
+ },
+ {
+  "date": "2026-11-17",
+  "sym": "MAGIC",
+  "dist0": 0.87,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:MAGICUSD"
+ },
+ {
+  "date": "2026-11-17",
+  "sym": "AIOZ",
+  "dist0": 1.71,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:AIOZUSD"
+ },
+ {
+  "date": "2026-11-17",
+  "sym": "GMX",
+  "dist0": 2.67,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:GMXUSD"
  }
 ]
