@@ -518,5 +518,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:GMXUSD"
+ },
+ {
+  "date": "2026-11-18",
+  "sym": "ZRO",
+  "dist0": 2.17,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ZROLUSD"
  }
 ]
