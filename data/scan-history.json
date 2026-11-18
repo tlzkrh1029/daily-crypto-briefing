@@ -526,5 +526,45 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:ZROLUSD"
+ },
+ {
+  "date": "2026-11-19",
+  "sym": "GPS",
+  "dist0": 0.52,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:GPSUSD"
+ },
+ {
+  "date": "2026-11-19",
+  "sym": "PYTH",
+  "dist0": 0.91,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:PYTHUSD"
+ },
+ {
+  "date": "2026-11-19",
+  "sym": "MAGIC",
+  "dist0": 2.41,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:MAGICUSD"
+ },
+ {
+  "date": "2026-11-19",
+  "sym": "ICNT",
+  "dist0": 3.66,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ICNTUSD"
+ },
+ {
+  "date": "2026-11-19",
+  "sym": "NCT",
+  "dist0": 6.52,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:NCTUSD"
  }
 ]
