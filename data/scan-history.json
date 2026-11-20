@@ -566,5 +566,21 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:NCTUSD"
+ },
+ {
+  "date": "2026-11-21",
+  "sym": "PUMP",
+  "dist0": 0.22,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:PUMPFUSD"
+ },
+ {
+  "date": "2026-11-21",
+  "sym": "GPS",
+  "dist0": 0.83,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:GPSUSD"
  }
 ]
