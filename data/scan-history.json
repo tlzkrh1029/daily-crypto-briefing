@@ -582,5 +582,37 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:GPSUSD"
+ },
+ {
+  "date": "2026-11-23",
+  "sym": "GRASS",
+  "dist0": 0.2,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:GRASS2USD"
+ },
+ {
+  "date": "2026-11-23",
+  "sym": "UNI",
+  "dist0": 0.22,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:UNIUSD"
+ },
+ {
+  "date": "2026-11-23",
+  "sym": "GMX",
+  "dist0": 1.72,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:GMXUSD"
+ },
+ {
+  "date": "2026-11-23",
+  "sym": "NCT",
+  "dist0": 2.18,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:NCTUSD"
  }
 ]
