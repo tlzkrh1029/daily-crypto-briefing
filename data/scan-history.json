@@ -614,5 +614,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:NCTUSD"
+ },
+ {
+  "date": "2026-11-24",
+  "sym": "STX",
+  "dist0": 1.01,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:STXSUSD"
  }
 ]
