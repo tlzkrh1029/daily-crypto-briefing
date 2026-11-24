@@ -622,5 +622,29 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:STXSUSD"
+ },
+ {
+  "date": "2026-11-25",
+  "sym": "UNI",
+  "dist0": 2.61,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:UNIUSD"
+ },
+ {
+  "date": "2026-11-25",
+  "sym": "LISTA",
+  "dist0": 3.61,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:LISTAUSD"
+ },
+ {
+  "date": "2026-11-25",
+  "sym": "LSK",
+  "dist0": 3.97,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:LSKUSD"
  }
 ]
