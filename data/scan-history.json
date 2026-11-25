@@ -646,5 +646,21 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:LSKUSD"
+ },
+ {
+  "date": "2026-11-26",
+  "sym": "INIT",
+  "dist0": 2.12,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:INITUSD"
+ },
+ {
+  "date": "2026-11-26",
+  "sym": "KITE",
+  "dist0": 2.54,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:KITEUSD"
  }
 ]
