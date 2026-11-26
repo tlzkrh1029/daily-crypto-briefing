@@ -662,5 +662,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:KITEUSD"
+ },
+ {
+  "date": "2026-11-27",
+  "sym": "MAGIC",
+  "dist0": 0.14,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:MAGICUSD"
  }
 ]
