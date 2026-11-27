@@ -670,5 +670,13 @@
   "src": "tv",
   "unit": "USD",
   "tv": "CRYPTO:MAGICUSD"
+ },
+ {
+  "date": "2026-11-28",
+  "sym": "EGLD",
+  "dist0": 5.92,
+  "src": "upbit",
+  "unit": "KRW",
+  "tv": null
  }
 ]
