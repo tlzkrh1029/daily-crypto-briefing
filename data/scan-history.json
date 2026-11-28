@@ -678,5 +678,29 @@
   "src": "upbit",
   "unit": "KRW",
   "tv": null
+ },
+ {
+  "date": "2026-11-29",
+  "sym": "ORCA",
+  "dist0": 1.25,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ORCAUSD"
+ },
+ {
+  "date": "2026-11-29",
+  "sym": "UNI",
+  "dist0": 2.59,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:UNIUSD"
+ },
+ {
+  "date": "2026-11-29",
+  "sym": "ICNT",
+  "dist0": 9.53,
+  "src": "tv",
+  "unit": "USD",
+  "tv": "CRYPTO:ICNTUSD"
  }
 ]
